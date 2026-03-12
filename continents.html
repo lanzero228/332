@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Game Academy | Континенты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-globe-asia logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>WORLD GAME ACADEMY</h1>
+                        <p>АКАДЕМИЯ ТРАДИЦИОННЫХ ИГР</p>
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html" class="active">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </nav>
+                <a href="index.html#contact" class="btn-login">Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Игры по континентам</h1>
+                <p class="page-description">Путешествие по игровым традициям разных регионов</p>
+            </div>
+        </section>
+
+        <!-- Континенты с подробным описанием -->
+        <section class="continents-detailed">
+            <div class="container">
+                <!-- Азия -->
+                <div class="continent-block" id="asia">
+                    <div class="continent-block-image">
+                        <img src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Азия">
+                    </div>
+                    <div class="continent-block-content">
+                        <h2>Азия</h2>
+                        <p class="continent-subtitle">Колыбель стратегических игр</p>
+                        <p>Азия подарила миру величайшие стратегические игры: Го, сёги, маджонг, пачиси. Здесь игры часто связаны с философией, медитацией и развитием ума. В Китае, Японии и Корее игры существуют тысячелетиями и являются частью культурного кода.</p>
+                        
+                        <h4>Популярные игры:</h4>
+                        <ul class="continent-games-list">
+                            <li><a href="games.html#go">Го (Китай)</a> — стратегическая игра, требующая интуиции</li>
+                            <li><a href="games.html#shogi">Сёги (Япония)</a> — японские шахматы с уникальными правилами</li>
+                            <li><a href="games.html#mahjong">Маджонг (Китай)</a> — игра с костями, требующая внимания</li>
+                            <li><a href="games.html#pachisi">Пачиси (Индия)</a> — предок современных игр-бродилок</li>
+                        </ul>
+                        
+                        <a href="games.html?region=asia" class="btn-primary">Смотреть все игры Азии</a>
+                    </div>
+                </div>
+
+                <!-- Африка -->
+                <div class="continent-block reverse" id="africa">
+                    <div class="continent-block-image">
+                        <img src="https://images.pexels.com/photos/417054/pexels-photo-417054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Африка">
+                    </div>
+                    <div class="continent-block-content">
+                        <h2>Африка</h2>
+                        <p class="continent-subtitle">Игры пустыни и саванны</p>
+                        <p>Африканские игры часто связаны с сельским хозяйством и собирательством. Самый известный тип — манкала, игры с перемещением семян по лункам. Древний Египет подарил миру сенет — игру с религиозным значением, путь в загробный мир.</p>
+                        
+                        <h4>Популярные игры:</h4>
+                        <ul class="continent-games-list">
+                            <li><a href="games.html#mancala">Манкала</a> — семейство игр с перемещением семян</li>
+                            <li><a href="games.html#senet">Сенет (Египет)</a> — древнейшая настольная игра</li>
+                            <li><a href="games.html#bao">Бао (Восточная Африка)</a> — сложная версия манкалы</li>
+                            <li><a href="games.html#mehen">Мехен (Египет)</a> — игра в форме змеи</li>
+                        </ul>
+                        
+                        <a href="games.html?region=africa" class="btn-primary">Смотреть все игры Африки</a>
+                    </div>
+                </div>
+
+                <!-- Европа -->
+                <div class="continent-block" id="europe">
+                    <div class="continent-block-image">
+                        <img src="https://images.pexels.com/photos/161233/fountain-medieval-fantasy-architecture-161233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Европа">
+                    </div>
+                    <div class="continent-block-content">
+                        <h2>Европа</h2>
+                        <p class="continent-subtitle">Средневековые стратегии</p>
+                        <p>Европейские игры часто отражают военную тактику и социальную иерархию средневековья. Шахматы, пришедшие из Индии, стали королевской игрой. Викинги играли в хнефатафл, моделирующий военные сражения.</p>
+                        
+                        <h4>Популярные игры:</h4>
+                        <ul class="continent-games-list">
+                            <li><a href="games.html#chess">Шахматы</a> — королевская игра, символ стратегии</li>
+                            <li><a href="games.html#hnefatafl">Хнефатафл (Скандинавия)</a> — игра викингов</li>
+                            <li><a href="games.html#tafl">Тавлеи (Русь)</a> — славянская версия тафла</li>
+                            <li><a href="games.html#backgammon">Нарды</a> — одна из древнейших игр</li>
+                        </ul>
+                        
+                        <a href="games.html?region=europe" class="btn-primary">Смотреть все игры Европы</a>
+                    </div>
+                </div>
+
+                <!-- Америка -->
+                <div class="continent-block reverse" id="america">
+                    <div class="continent-block-image">
+                        <img src="https://images.pexels.com/photos/315791/pexels-photo-315791.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Америка">
+                    </div>
+                    <div class="continent-block-content">
+                        <h2>Америка</h2>
+                        <p class="continent-subtitle">Игры доколумбовых цивилизаций</p>
+                        <p>Игры коренных народов Америки часто имели ритуальное значение. Ацтеки играли в патолли, майя — в пука. Мезоамериканские игры отражали космологию и религиозные представления.</p>
+                        
+                        <h4>Популярные игры:</h4>
+                        <ul class="continent-games-list">
+                            <li><a href="games.html#patolli">Патолли (ацтеки)</a> — игра с ритуальным значением</li>
+                            <li><a href="games.html#puka">Пука (майя)</a> — игра с бобами</li>
+                            <li><a href="games.html#tlachtli">Тлачтли</a> — мезоамериканская игра в мяч</li>
+                            <li><a href="games.html#chunkey">Чанки (индейцы)</a> — игра с камнем и копьями</li>
+                        </ul>
+                        
+                        <a href="games.html?region=america" class="btn-primary">Смотреть все игры Америки</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Интерактивная карта -->
+        <section class="world-map-section">
+            <div class="container">
+                <h2 class="section-title">Карта игр мира</h2>
+                <div class="world-map-placeholder">
+                    <i class="fas fa-globe-americas"></i>
+                    <p>Интерактивная карта появится здесь</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>WORLD GAME ACADEMY</span>
+                    </a>
+                    <p>Академия традиционных игр народов мира</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 World Game Academy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

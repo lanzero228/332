@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Game Academy | Игры мира</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-globe-asia logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>WORLD GAME ACADEMY</h1>
+                        <p>АКАДЕМИЯ ТРАДИЦИОННЫХ ИГР</p>
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="games.html" class="active">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </nav>
+                <a href="index.html#contact" class="btn-login">Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Энциклопедия настольных игр мира</h1>
+                <p class="page-description">Более 50 игр с подробными правилами, историей и философией</p>
+            </div>
+        </section>
+
+        <!-- Фильтр по категориям -->
+        <section class="games-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все игры</button>
+                    <button class="filter-btn" data-filter="classic">Классические</button>
+                    <button class="filter-btn" data-filter="cards">Карточные</button>
+                    <button class="filter-btn" data-filter="party">Для компании</button>
+                    <button class="filter-btn" data-filter="strategy">Стратегии</button>
+                    <button class="filter-btn" data-filter="solo">Для одного</button>
+                    <button class="filter-btn" data-filter="kids">Детские</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сетка игр -->
+        <section class="games-showcase full">
+            <div class="container">
+                <div class="games-grid" id="games-grid">
+                    
+                    <!-- Монополия -->
+                    <div class="game-card" data-category="classic">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4114770/pexels-photo-4114770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Монополия">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Монополия (Monopoly)</h3>
+                            <p class="game-origin">США, 1935 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки перемещаются по полю, покупают земельные участки, строят дома и отели и взимают арендную плату с соперников. Цель — обанкротить всех противников и остаться единственным монополистом.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 60–180 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Шахматы -->
+                    <div class="game-card" data-category="classic strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Шахматы">
+                            <span class="game-region">Индия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Шахматы</h3>
+                            <p class="game-origin">Индия, VI век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Стратегическая игра на доске 8×8. Два игрока по очереди перемещают фигуры (каждая ходит по-своему). Цель — поставить мат королю противника, то есть создать угрозу, от которой нет защиты.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2 игрока</span>
+                                <span><i class="fas fa-clock"></i> 10–180 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Уно -->
+                    <div class="game-card" data-category="classic cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Уно">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Уно (UNO)</h3>
+                            <p class="game-origin">США, 1971 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки сбрасывают карты, совпадающие с верхней картой стопки по цвету или номиналу. В колоде есть специальные карты (пропуск хода, смена направления, возьми две и т.д.). Нужно первым избавиться от всех карт, крикнув «Уно!».</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–10 игроков</span>
+                                <span><i class="fas fa-clock"></i> 20–40 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Имаджинариум -->
+                    <div class="game-card" data-category="classic party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Имаджинариум">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Имаджинариум</h3>
+                            <p class="game-origin">Россия, 2011 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки по очереди становятся ведущими. Ведущий загадывает ассоциацию к одной из своих карт с картинкой и кладет её рубашкой вверх. Остальные выбирают из своих рук карту, максимально подходящую под эту ассоциацию. Затем все карты перемешиваются, и игроки угадывают карту ведущего.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 40–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Шашки -->
+                    <div class="game-card" data-category="classic">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Шашки">
+                            <span class="game-region">Древний Египет</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Шашки</h3>
+                            <p class="game-origin">Древний Египет, 3000 до н.э.</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игра на доске 8×8. Игроки ходят по диагонали вперед. Простая шашка, дойдя до последней горизонтали, становится дамкой и может ходить назад. Цель — съесть (перепрыгнуть) все шашки соперника или запереть их.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2 игрока</span>
+                                <span><i class="fas fa-clock"></i> 5–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Дженга -->
+                    <div class="game-card" data-category="classic party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Дженга">
+                            <span class="game-region">Великобритания</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Дженга</h3>
+                            <p class="game-origin">Великобритания, 1980 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Из деревянных брусков строится башня. Игроки по очереди вытаскивают по одному бруску из любой части башни (кроме верхнего незавершенного ряда) и кладут его наверх. Проигрывает тот, из-за чьего хода башня рухнет.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 10–20 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Домино -->
+                    <div class="game-card" data-category="classic">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Домино">
+                            <span class="game-region">Китай</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Домино</h3>
+                            <p class="game-origin">Китай, XII век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки выкладывают костяшки, совмещая их по количеству точек на половинках. Стандартная цель — первым выложить все свои костяшки. Существует множество вариантов игры (Козёл, Морской козёл и др.).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 15–45 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Лото -->
+                    <div class="game-card" data-category="classic">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Лото">
+                            <span class="game-region">Италия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Лото</h3>
+                            <p class="game-origin">Италия, XVI век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Ведущий достает из мешка бочонки с номерами и называет их. Игроки закрывают эти номера на своих карточках. Выигрывает тот, кто первым закроет все числа на своей карточке (или в ряду, в зависимости от правил).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Нарды -->
+                    <div class="game-card" data-category="classic">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/3748879/pexels-photo-3748879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Нарды">
+                            <span class="game-region">Персия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Нарды</h3>
+                            <p class="game-origin">Персия, 3000 лет</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игра на специальной доске. Игроки бросают кубики и перемещают свои шашки по лункам в соответствии с выпавшими очками. Цель — провести все свои шашки в "дом" и затем выбросить их с доски раньше соперника.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2 игрока</span>
+                                <span><i class="fas fa-clock"></i> 10–45 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Го -->
+                    <div class="game-card" data-category="classic strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/5836023/pexels-photo-5836023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Го">
+                            <span class="game-region">Китай</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Го</h3>
+                            <p class="game-origin">Китай, более 2500 лет</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Древняя китайская стратегическая игра. Игроки по очереди выставляют камни (черные и белые) на пересечения линий доски 19×19. Цель — отгородить себе большую территорию, чем соперник, и захватывать его камни.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2 игрока</span>
+                                <span><i class="fas fa-clock"></i> 30–180 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: очень высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Покер -->
+                    <div class="game-card" data-category="cards strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Покер">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Покер (Техасский Холдем)</h3>
+                            <p class="game-origin">США, XX век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Каждому игроку сдаются по 2 закрытые карты. Затем открываются 5 общих карт в три этапа (флоп, терн, ривер). Игроки собирают лучшую покерную комбинацию из 7 карт. Цель — выиграть банк, собрав лучшую комбинацию или заставив всех соперников сбросить карты (сблефовать).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–10 игроков</span>
+                                <span><i class="fas fa-clock"></i> от 30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Дурак -->
+                    <div class="game-card" data-category="cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Дурак">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Дурак (Подкидной)</h3>
+                            <p class="game-origin">Россия, XIX век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Классическая русская карточная игра. Цель — избавиться от всех своих карт. Игроки по очереди "ходят" (подкидывают карты) под "отбивающегося", который должен бить их картой той же масти, но старше по номиналу, или козырем. Проигравший ("дурак") забирает все карты со стола.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–40 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Свинтус -->
+                    <div class="game-card" data-category="cards party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Свинтус">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Свинтус</h3>
+                            <p class="game-origin">Россия, 2010 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки должны как можно быстрее избавиться от своих карт, выкладывая их по принципу «больше-меньше» или «меньше-больше» относительно верхней карты стопки. В игре много карт-эффектов, которые меняют направление, заставляют всех брать карты или меняться руками.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 20–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Блэкджек -->
+                    <div class="game-card" data-category="cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Блэкджек">
+                            <span class="game-region">Франция</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Блэкджек (21)</h3>
+                            <p class="game-origin">Франция, XVII век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игра против дилера (казино или ведущего). Цель — набрать сумму очков, близкую к 21, но не больше. Карты от 2 до 10 дают номинал, валет, дама, король — 10 очков, туз — 1 или 11. Игрок может брать дополнительные карты (хит) или остановиться (стэнд).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–7 против дилера</span>
+                                <span><i class="fas fa-clock"></i> быстрая</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Тысяча -->
+                    <div class="game-card" data-category="cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Тысяча">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Тысяча (1000)</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Взятковая карточная игра. Игрокам раздаются карты, назначается козырь. Цель — набрать 1000 очков за счет взяток и объявленных "марьяжей" (король и дама одной масти). Очень популярна в России.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Преферанс -->
+                    <div class="game-card" data-category="cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Преферанс">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Преферанс</h3>
+                            <p class="game-origin">Россия, XIX век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Интеллектуальная карточная игра, требующая точного расчета. Игроки торгуются за право заказать количество взяток, которое они обязуются взять. В игре сложная система записи очков ("пуля", "гора", "висты").</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 3–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 60–120 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: очень высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Бридж -->
+                    <div class="game-card" data-category="cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Бридж">
+                            <span class="game-region">Великобритания</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Бридж</h3>
+                            <p class="game-origin">Великобритания, XIX век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Парная карточная игра. Четверо игроков делятся на две команды. Состоит из двух фаз: торговля (определение контракта) и розыгрыш. Считается одной из самых сложных и интеллектуальных карточных игр.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4 игрока</span>
+                                <span><i class="fas fa-clock"></i> несколько часов</span>
+                                <span><i class="fas fa-star"></i> Сложность: экстремальная</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Мафия -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Мафия">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Мафия</h3>
+                            <p class="game-origin">Россия, 1986 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Ведущий раздает роли. Игра делится на фазы: ночь (мирные жители "засыпают", мафия "просыпается" и убивает одного) и день (все обсуждают, кто может быть мафией, и голосуют за исключение подозреваемого). Цель мирных — найти и казнить всех мафиози, цель мафии — убить всех мирных.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 8–12 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Твистер -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Твистер">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Твистер</h3>
+                            <p class="game-origin">США, 1966 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>На полу расстилается поле с цветными кругами. Ведущий вращает рулетку и объявляет, какую часть тела (руку или ногу) и на круг какого цвета нужно поставить. Игроки пытаются выполнить задание, не падая и не отрывая других конечностей от поля.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 10–20 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Активити -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Активити">
+                            <span class="game-region">Австрия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Активити</h3>
+                            <p class="game-origin">Австрия, 1995 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки делятся на команды. За определенное время нужно объяснить своей команде слово или фразу, используя рисунки, пантомиму или словесные описания (в зависимости от выпавшего поля на карте).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 3–16 игроков</span>
+                                <span><i class="fas fa-clock"></i> 45–75 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Крокодил -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Крокодил">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Крокодил</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игрок (или команда) загадывает слово и показывает его другим игрокам с помощью жестов и пантомимы, не используя звуков и речи. Остальные пытаются угадать, что показывают.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> от 4 игроков</span>
+                                <span><i class="fas fa-clock"></i> гибкая</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Шляпа -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Шляпа">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Шляпа</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки пишут слова на бумажках и кладут в шляпу. Затем делятся на команды. За ограниченное время нужно объяснить своей команде как можно больше слов из шляпы. Существуют раунды: "словами", "жестами", "одним словом".</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4–20 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Кодовые имена -->
+                    <div class="game-card" data-category="party strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Кодовые имена">
+                            <span class="game-region">Чехия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Кодовые имена (Codenames)</h3>
+                            <p class="game-origin">Чехия, 2015 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Команды соревнуются, кто быстрее отгадает все свои слова. Капитаны команд видят карту с кодовыми именами (словами) и тайными ролями. Капитан дает подсказку из одного слова и числа, чтобы навести свою команду на нужные слова на столе.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Спортивная мафия -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Спортивная мафия">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Спортивная мафия</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Отличается от классической мафии строгим регламентом, наличием ведущего-судьи, нумерацией игроков и отсутствием "пафоса" (долгих речей). Игроки сидят по номерам, общение строго регламентировано.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 10–11 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Данетки -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Данетки">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Данетки</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Ведущий описывает странную ситуацию (обычно детективную или мистическую). Игроки могут задавать вопросы, на которые ведущий отвечает только "да", "нет" или "неважно". Цель — восстановить полную картину произошедшего.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–10 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Я никогда не... -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Я никогда не">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Я никогда не...</h3>
+                            <p class="game-origin">США</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки по очереди говорят фразу "Я никогда не..." и называют действие, которое они никогда не совершали. Те, кто это действие совершал, выпивают (штрафной глоток или загибают палец). Цель — узнать друг друга получше.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> от 3 игроков</span>
+                                <span><i class="fas fa-clock"></i> гибкая</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Каркассон -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Каркассон">
+                            <span class="game-region">Германия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Каркассон (Carcassonne)</h3>
+                            <p class="game-origin">Германия, 2000 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки по очереди выкладывают квадраты местности (луга, дороги, города), создавая карту. На выставленный квадрат можно поставить своего подданного (меппла), чтобы занять дорогу, город или поле и получить за это победные очки в конце игры.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–5 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–45 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Колонизаторы -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Колонизаторы">
+                            <span class="game-region">Германия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Колонизаторы (Catan)</h3>
+                            <p class="game-origin">Германия, 1995 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки осваивают остров Катан. В свой ход бросаются кубики, и те, у кого есть поселения рядом с полями выпавшего номера, получают ресурсы (кирпич, дерево, шерсть, руду, зерно). Из ресурсов можно строить дороги, города и покупать карты развития. Цель — первым набрать 10 победных очков.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 3–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 60–120 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Бэнг! -->
+                    <div class="game-card" data-category="strategy cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Бэнг">
+                            <span class="game-region">Италия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Бэнг! (Bang!)</h3>
+                            <p class="game-origin">Италия, 2002 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игра в стиле вестерна. Каждому игроку тайно раздается роль (Шериф, Помощник, Бандит, Ренегат). У каждого персонажа есть уникальная способность. Игроки используют карты для стрельбы друг по другу, питья виски, найма помощников и т.д. Цель зависит от роли (например, шериф должен убить всех бандитов).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4–7 игроков</span>
+                                <span><i class="fas fa-clock"></i> 20–40 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Экивоки -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Экивоки">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Экивоки</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Командная игра, где нужно объяснять слова и фразы самыми разными способами: словами, жестами, рисунками, лепкой из пластилина, пением или даже с помощью специальных "экстра-правил" (например, говорить задом наперед или стоя на одной ноге).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4–16 игроков</span>
+                                <span><i class="fas fa-clock"></i> 45–90 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Ticket to Ride -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ticket to Ride">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Ticket to Ride (Билет на поезд)</h3>
+                            <p class="game-origin">США, 2004 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки собирают карты вагонов определенных цветов, чтобы занимать железнодорожные маршруты на карте, соединяя города. За занятые маршруты даются очки. В конце игры начисляются дополнительные очки за выполненные секретные задания (билеты) и вычитаются за невыполненные.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–5 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая/средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Манчкин -->
+                    <div class="game-card" data-category="strategy cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Манчкин">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Манчкин (Munchkin)</h3>
+                            <p class="game-origin">США, 2001 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Пародийная RPG-игра. Игроки исследуют подземелье, сражаются с монстрами, собирают сокровища и надевают шмотки. Главная цель — прокачать своего персонажа до 10-го уровня, всячески мешая соперникам (подкладывая им монстров или проклятий).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 3–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 60–90 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Эволюция -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Эволюция">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Эволюция</h3>
+                            <p class="game-origin">Россия, 2010 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки создают и развивают собственные виды животных, добавляя им свойства (хищник, панцирь, паразит, большой размер и т.д.). В начале хода все получают карты (еду), а затем кормят своих животных. Хищники могут нападать на других. Цель — набрать как можно больше очков, сохранив свою популяцию.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 40–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Aliask -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Aliask">
+                            <span class="game-region">Финляндия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Aliask</h3>
+                            <p class="game-origin">Финляндия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Командная игра. Нужно объяснить своей команде как можно больше слов за минуту, используя синонимы, антонимы, описания, но не называя само слово и однокоренные с ним. Команда должна угадать слово.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 4–12 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Морской бой -->
+                    <div class="game-card" data-category="classic">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Морской бой">
+                            <span class="game-region">Россия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Морской бой</h3>
+                            <p class="game-origin">Россия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки на своих листочках в клетку рисуют флот (корабли разного размера) и, называя координаты, пытаются попасть по кораблям соперника. Кто первый потопит все корабли противника — победил.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2 игрока</span>
+                                <span><i class="fas fa-clock"></i> 10–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Эрудит -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Эрудит">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Эрудит (Scrabble)</h3>
+                            <p class="game-origin">США, 1938 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки составляют слова на игровом поле из букв, которые есть у них на руке. Каждая буква приносит определенное количество очков. На поле есть бонусные клетки, удваивающие/утраивающие очки за букву или слово. Побеждает тот, кто наберет больше очков.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 60–90 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Диксит -->
+                    <div class="game-card" data-category="party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Диксит">
+                            <span class="game-region">Франция</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Диксит (Dixit)</h3>
+                            <p class="game-origin">Франция, 2008 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Очень похожа на "Имаджинариум". Игроки выбирают ведущего, который загадывает ассоциацию к своей карте. Остальные подбирают подходящую карту из своего набора. Затем все карты перемешиваются и выкладываются, и игроки угадывают карту ведущего.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 3–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–45 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Древний ужас -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Древний ужас">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Древний ужас (Eldritch Horror)</h3>
+                            <p class="game-origin">США, 2013 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Кооперативная игра по мотивам мифов Лавкрафта. Игроки выбирают сыщиков и путешествуют по миру, сражаясь с монстрами, закрывая врата и собирая улики, чтобы предотвратить пробуждение Древнего (одного из нескольких возможных богов).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 180–300 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Пандемия -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Пандемия">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Пандемия (Pandemic)</h3>
+                            <p class="game-origin">США, 2008 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Кооперативная игра, где игроки выступают в роли специалистов (ученый, диспетчер, медик и др.), пытающихся остановить распространение смертельных болезней по планете. Нужно коллективно находить лекарства, не давая вспышкам уничтожить человечество.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 45–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- 7 чудес -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="7 чудес">
+                            <span class="game-region">Бельгия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>7 чудес (7 Wonders)</h3>
+                            <p class="game-origin">Бельгия, 2010 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки развивают свои древние цивилизации на протяжении трех эпох. Карты передаются по кругу ("драфт"). Нужно строить архитектурные чудеса, развивать науку, торговлю и военную мощь. Победитель определяется по сумме очков в разных категориях.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 3–7 игроков</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Терраформирование Марса -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Терраформирование Марса">
+                            <span class="game-region">Швеция</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Терраформирование Марса (Terraforming Mars)</h3>
+                            <p class="game-origin">Швеция, 2016 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Корпорации соревнуются в деле терраформирования Марса. Игроки запускают проекты, повышают температуру, уровень кислорода и создают океаны, чтобы сделать планету пригодной для жизни. Очень глубокая экономическая стратегия.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1–5 игроков</span>
+                                <span><i class="fas fa-clock"></i> 120–180 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Root -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Root">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Root</h3>
+                            <p class="game-origin">США, 2018 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Асимметричная стратегия про войну в лесу. Каждая фракция (маркизы, орлы, альянс, бродяга) имеет уникальные механику и цели. Маркизы строят базы, орлы летают и разоряют, альянс поднимает восстания.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 60–120 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: высокая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Зомбицид -->
+                    <div class="game-card" data-category="strategy">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Зомбицид">
+                            <span class="game-region">Испания</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Зомбицид (Zombicide)</h3>
+                            <p class="game-origin">Испания, 2012 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Кооперативный survival-horror. Игроки выбирают выживших с разными способностями и пытаются выжить в мире, наводненном зомби. Нужно выполнять сценарии, искать оружие, прокачиваться и уничтожать полчища зомби.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 60–180 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Взрывные котята -->
+                    <div class="game-card" data-category="cards party">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Взрывные котята">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Взрывные котята (Exploding Kittens)</h3>
+                            <p class="game-origin">США, 2015 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Российская рулетка в карточной форме. Игроки тянут карты из колоды до тех пор, пока кто-то не вытянет "взрывного котенка". Если у игрока нет карты "обезвреживание", он проигрывает и выбывает. Остальные продолжают.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–5 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Пазлы -->
+                    <div class="game-card" data-category="solo">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Пазлы">
+                            <span class="game-region">Великобритания</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Пазлы</h3>
+                            <p class="game-origin">Великобритания, 1760 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Собрать цельное изображение из множества фрагментов различной формы. Задача может быть усложнена количеством деталей, их формой или одинаковым цветом фона.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> от 30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: от низкой до экстремальной</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Пасьянс Косынка -->
+                    <div class="game-card" data-category="solo cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Пасьянс Косынка">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Пасьянс Косынка</h3>
+                            <p class="game-origin">США</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Нужно разложить все карты в четыре стопки по мастям в восходящем порядке от туза до короля. Карты в основной зоне выкладываются в убывающем порядке, чередуя цвета (черная-красная).</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1 игрок</span>
+                                <span><i class="fas fa-clock"></i> 5–15 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая/средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Судоку -->
+                    <div class="game-card" data-category="solo">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Судоку">
+                            <span class="game-region">Швейцария</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Судоку</h3>
+                            <p class="game-origin">Швейцария, XVIII век</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Головоломка с числами. Квадрат 9x9 разделен на меньшие квадраты 3x3. В каждой строке, каждом столбце и каждом малом квадрате каждая цифра от 1 до 9 должна встречаться ровно один раз.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1 игрок</span>
+                                <span><i class="fas fa-clock"></i> 10–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: от низкой до высокой</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Солитер -->
+                    <div class="game-card" data-category="solo cards">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Солитер">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Солитер (Пасьянс "Паук")</h3>
+                            <p class="game-origin">США</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Разновидность пасьянса. Нужно разложить все карты от короля до туза одной масти. Карты можно перемещать, собирая последовательности. Считается одним из самых сложных пасьянсов.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1 игрок</span>
+                                <span><i class="fas fa-clock"></i> 15–40 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Кроссворды -->
+                    <div class="game-card" data-category="solo">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Кроссворды">
+                            <span class="game-region">Великобритания</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Кроссворды и сканворды</h3>
+                            <p class="game-origin">Великобритания, 1913 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Разгадывание слов по определениям. В сканвордах слова вписываются в сетку, где стрелками указаны направления. Тренирует память и эрудицию.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1 игрок</span>
+                                <span><i class="fas fa-clock"></i> 10–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: от низкой до высокой</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div class="game-card" data-category="solo">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Friday">
+                            <span class="game-region">Германия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Friday</h3>
+                            <p class="game-origin">Германия, 2012 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Карточная соло-игра, где вы играете за Пятницу, помогающего Робинзону Крузо выжить на острове. Нужно убирать из колоды слабые карты, сражаться с пиратами и готовить Робинзона к финальным битвам.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 1 игрок</span>
+                                <span><i class="fas fa-clock"></i> 20–40 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Код да Винчи -->
+                    <div class="game-card" data-category="solo">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Код да Винчи">
+                            <span class="game-region">Израиль</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Код да Винчи</h3>
+                            <p class="game-origin">Израиль</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Логическая игра-головоломка. Игрокам нужно угадать расположение загаданных цветных колышков соперника (или компьютера), задавая вопросы и анализируя ответы.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2 игрока</span>
+                                <span><i class="fas fa-clock"></i> 15–30 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: средняя</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Мемо -->
+                    <div class="game-card" data-category="kids">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Мемо">
+                            <span class="game-region">Германия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Мемо</h3>
+                            <p class="game-origin">Германия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Карточки с картинками раскладываются рубашкой вверх. Игроки открывают по две карточки за ход. Если картинки совпали — игрок забирает их себе и ходит еще. Выигрывает тот, кто соберет больше всех пар. Отлично развивает память.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–20 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Соображарий -->
+                    <div class="game-card" data-category="kids">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Соображарий">
+                            <span class="game-region">Франция</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Соображарий (Jungle Speed)</h3>
+                            <p class="game-origin">Франция, 1997 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>У всех игроков есть колода карт с разными символами. В центре лежит тотем. Игроки одновременно открывают карты. Как только у двух игроков совпадают символы, они должны схватить тотем. Кто схватил — сбрасывает карты проигравшему.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–10 игроков</span>
+                                <span><i class="fas fa-clock"></i> 10–20 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Халли Галли -->
+                    <div class="game-card" data-category="kids">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Халли Галли">
+                            <span class="game-region">Германия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Халли Галли</h3>
+                            <p class="game-origin">Германия, 1990 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Игроки по очереди открывают карты с фруктами. Как только на открытых картах сумма какого-либо фрукта становится равной 5, нужно быстрее всех позвонить в колокольчик и забрать все открытые карты себе.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–6 игроков</span>
+                                <span><i class="fas fa-clock"></i> 10–20 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Доббль -->
+                    <div class="game-card" data-category="kids">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Доббль">
+                            <span class="game-region">Франция</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Доббль (Dobble)</h3>
+                            <p class="game-origin">Франция, 2009 год</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>На каждой карте изображено 8 символов, и между любой парой карт есть ровно один общий символ. Игроки соревнуются в скорости, кто быстрее найдет этот общий символ на своей карте и карте из колоды.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–8 игроков</span>
+                                <span><i class="fas fa-clock"></i> 10–15 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Монополия Junior -->
+                    <div class="game-card" data-category="kids">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Монополия Junior">
+                            <span class="game-region">США</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Монополия Junior</h3>
+                            <p class="game-origin">США</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Упрощенная версия классической Монополии для детей. Вместо улиц — аттракционы и магазины, правила проще, а игра заканчивается быстрее.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–4 игрока</span>
+                                <span><i class="fas fa-clock"></i> 30–60 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+
+                    <!-- Золотая лихорадка -->
+                    <div class="game-card" data-category="kids">
+                        <div class="game-image">
+                            <img src="https://images.pexels.com/photos/4968226/pexels-photo-4968226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Золотая лихорадка">
+                            <span class="game-region">Германия</span>
+                        </div>
+                        <div class="game-content">
+                            <h3>Золотая лихорадка</h3>
+                            <p class="game-origin">Германия</p>
+                            <div class="game-rules">
+                                <h4>Правила:</h4>
+                                <p>Детская игра на удачу и память. Нужно тянуть слитки золота из мешка, стараясь не разбудить медведя. Если вытащил медведя — проиграл.</p>
+                            </div>
+                            <div class="game-meta">
+                                <span><i class="fas fa-user"></i> 2–5 игроков</span>
+                                <span><i class="fas fa-clock"></i> 15–20 мин</span>
+                                <span><i class="fas fa-star"></i> Сложность: низкая</span>
+                            </div>
+                            <a href="#" class="game-details">Подробнее →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>WORLD GAME ACADEMY</span>
+                    </a>
+                    <p>Академия традиционных игр народов мира</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 World Game Academy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Фильтр игр
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const games = document.querySelectorAll('.game-card');
+                
+                games.forEach(game => {
+                    if (filter === 'all' || game.dataset.category.includes(filter)) {
+                        game.style.display = 'flex';
+                    } else {
+                        game.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

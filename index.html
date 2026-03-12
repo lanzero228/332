@@ -1,22 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Game Academy | Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="card">
-  <img src="49a3fcb3514a9e4b313122102e5547f1.jpg" alt="">
-  <h3>Небо</h3>
-  <p>Девушка на красивом фоне</p>
-  <div>
-  <span>Фон темный &#8381;</span>
-  <span class="price">Черное небо</span>
-  </div>
-  <button>В избранное</button>
-</div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-globe-asia logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>WORLD GAME ACADEMY</h1>
+                        <p>АКАДЕМИЯ ТРАДИЦИОННЫХ ИГР</p>
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="btn-login">Исследовать</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero секция -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Путешествие в мир <span>традиционных игр</span></h1>
+                        <p class="hero-description">Открой для себя богатство игровой культуры народов мира. Узнай правила, историю и философию игр от Азии до Америки.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">СТРАН</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">200+</div>
+                                <div class="stat-label">ИГР</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">3000+</div>
+                                <div class="stat-label">ЛЕТ ИСТОРИИ</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="games.html" class="btn-primary">Начать обучение</a>
+                            <a href="#features" class="btn-secondary">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.pexels.com/photos/3935705/pexels-photo-3935705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Традиционные игры мира">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества (только на главной) -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Почему изучают игры мира</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-history feature-icon"></i>
+                        <h3>Культурное наследие</h3>
+                        <p>Игры отражают традиции, философию и образ жизни разных народов. Через игры мы понимаем культуру.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-brain feature-icon"></i>
+                        <h3>Развитие мышления</h3>
+                        <p>Традиционные игры тренируют стратегическое мышление, память и логику лучше современных видеоигр.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h3>Объединение людей</h3>
+                        <p>Игры созданы для живого общения. Они помогают находить друзей по всему миру через общее увлечение.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-scroll feature-icon"></i>
+                        <h3>Историческая ценность</h3>
+                        <p>Некоторым играм тысячи лет. Изучая их, мы прикасаемся к истории человечества.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Превью разделов (ссылки на другие страницы) -->
+        <section class="preview">
+            <div class="container">
+                <h2 class="section-title">Исследуйте наши разделы</h2>
+                
+                <div class="preview-grid">
+                    <a href="games.html" class="preview-card">
+                        <i class="fas fa-chess-board"></i>
+                        <h3>Игры мира</h3>
+                        <p>200+ игр с подробными правилами</p>
+                        <span class="preview-link">Перейти →</span>
+                    </a>
+                    
+                    <a href="continents.html" class="preview-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Континенты</h3>
+                        <p>Игры разных народов по регионам</p>
+                        <span class="preview-link">Перейти →</span>
+                    </a>
+                    
+                    <a href="workshops.html" class="preview-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Мастер-классы</h3>
+                        <p>Живое обучение с историками</p>
+                        <span class="preview-link">Перейти →</span>
+                    </a>
+                    
+                    <a href="library.html" class="preview-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Библиотека</h3>
+                        <p>Научные работы и манускрипты</p>
+                        <span class="preview-link">Перейти →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Цитата (только на главной) -->
+        <section class="quote">
+            <div class="container">
+                <div class="quote-content">
+                    <i class="fas fa-quote-right"></i>
+                    <p>Игры — это не просто развлечение. Это способ передачи знаний, философии и традиций от поколения к поколению.</p>
+                    <div class="quote-author">— Герберт Спенсер</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>WORLD GAME ACADEMY</span>
+                    </a>
+                    <p>Академия традиционных игр народов мира</p>
+                    <p class="footer-address">Сохранение игрового наследия человечества с 2015 года</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#about">О проекте</a></li>
+                        <li><a href="#partners">Партнеры</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 World Game Academy. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
