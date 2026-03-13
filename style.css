@@ -1362,3 +1362,551 @@ footer {
         padding: 30px 20px;
     }
 }
+/* Библиотека - Hero секция */
+.library-hero {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #2a3a2a 100%);
+    padding: 80px 0;
+    border-bottom: 3px solid var(--accent);
+}
+
+.library-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.library-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+.library-hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.library-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.library-search {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.library-search i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+}
+
+.library-search input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.library-search input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Категории библиотеки */
+.library-categories {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.library-categories .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.library-categories .category-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.library-categories .category-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-accent);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(196, 154, 108, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.category-icon i {
+    font-size: 30px;
+    color: var(--accent);
+}
+
+.category-count {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 12px;
+    background: rgba(196, 154, 108, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+/* Новые поступления */
+.new-acquisitions {
+    padding: 60px 0;
+    background: #2a3a2a;
+}
+
+.acquisitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.acquisition-card {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+    position: relative;
+}
+
+.acquisition-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-accent);
+}
+
+.acquisition-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--accent);
+    color: var(--bg-dark);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.acquisition-type {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.acquisition-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.acquisition-author {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.acquisition-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.acquisition-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.acquisition-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.acquisition-link:hover {
+    transform: translateX(5px);
+}
+
+/* Секции библиотеки */
+.library-section {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.library-item {
+    display: flex;
+    gap: 20px;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.library-item:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
+}
+
+.item-cover {
+    width: 80px;
+    height: 100px;
+    background: rgba(196, 154, 108, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-cover i {
+    font-size: 40px;
+    color: var(--accent);
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item-author {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.item-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.item-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.item-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Манускрипты */
+.manuscripts-section {
+    padding: 60px 0;
+    background: #2a3a2a;
+}
+
+.manuscripts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.manuscript-card {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.manuscript-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-accent);
+}
+
+.manuscript-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(196, 154, 108, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.manuscript-icon i {
+    font-size: 30px;
+    color: var(--accent);
+}
+
+.manuscript-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.manuscript-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.manuscript-description {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.manuscript-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Статьи */
+.articles-section {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.articles-list {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.article-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 0.3s;
+}
+
+.article-item:hover {
+    border-color: var(--accent);
+    transform: translateX(10px);
+}
+
+.article-icon i {
+    font-size: 24px;
+    color: var(--accent);
+}
+
+.article-content h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.article-meta {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* Видеотека */
+.video-section {
+    padding: 60px 0;
+    background: #2a3a2a;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-accent);
+}
+
+.video-thumbnail {
+    height: 160px;
+    background: rgba(196, 154, 108, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video-thumbnail i {
+    font-size: 50px;
+    color: var(--accent);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.video-thumbnail:hover i {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    padding: 15px 15px 5px;
+}
+
+.video-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    padding: 0 15px 15px;
+}
+
+/* Карты */
+.maps-section {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.map-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.map-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-accent);
+}
+
+.map-card i {
+    font-size: 60px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.map-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.map-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .library-categories .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .library-hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .library-hero h1 {
+        font-size: 36px;
+    }
+    
+    .library-categories .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .library-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .item-cover {
+        margin: 0 auto;
+    }
+    
+    .article-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .acquisition-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .library-search input {
+        padding: 12px 12px 12px 40px;
+    }
+}
