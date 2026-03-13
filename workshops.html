@@ -27,17 +27,62 @@
                         <li><a href="library.html">Библиотека</a></li>
                     </ul>
                 </nav>
-                <a href="index.html#contact" class="btn-login">Контакты</a>
+                <a href="#contact" class="btn-login">Контакты</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Заголовок страницы -->
-        <section class="page-header">
+        <!-- Hero секция мастер-классов -->
+        <section class="workshops-hero">
             <div class="container">
-                <h1 class="page-title">Мастер-классы и события</h1>
-                <p class="page-description">Живое обучение с этнографами, историками и мастерами традиционных игр</p>
+                <div class="workshops-hero-content">
+                    <h1>Мастер-классы по традиционным играм</h1>
+                    <p>Живое обучение с этнографами, историками и мастерами игр со всего мира. Очно и онлайн.</p>
+                    <div class="workshops-hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Мастер-классов в год</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Экспертов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Городов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Категории мастер-классов -->
+        <section class="workshops-categories">
+            <div class="container">
+                <h2 class="section-title">Выберите формат</h2>
+                <div class="categories-grid">
+                    <a href="#online" class="category-card">
+                        <i class="fas fa-laptop"></i>
+                        <h3>Онлайн</h3>
+                        <p>Участвуйте из любой точки мира</p>
+                    </a>
+                    <a href="#offline" class="category-card">
+                        <i class="fas fa-building"></i>
+                        <h3>Очно</h3>
+                        <p>Встречи в городах России</p>
+                    </a>
+                    <a href="#recorded" class="category-card">
+                        <i class="fas fa-video"></i>
+                        <h3>В записи</h3>
+                        <p>Лекции в любое удобное время</p>
+                    </a>
+                    <a href="#corporate" class="category-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Корпоративные</h3>
+                        <p>Для команд и организаций</p>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -46,266 +91,370 @@
             <div class="container">
                 <h2 class="section-title">Ближайшие мастер-классы</h2>
                 
-                <div class="workshops-grid">
-                    <!-- Мастер-класс 1 -->
-                    <div class="workshop-card featured">
-                        <div class="workshop-date">15 июня, 19:00</div>
-                        <h3>Игры Древнего Египта</h3>
-                        <p class="workshop-leader">Ведущий: Дмитрий Соколов, историк-египтолог</p>
-                        <p class="workshop-description">Сенет, манкала и мехен — учимся играть как фараоны. Погружение в культуру и религиозное значение игр Древнего Египта.</p>
-                        <div class="workshop-details">
-                            <span><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 15</span>
-                            <span><i class="fas fa-clock"></i> 2 часа</span>
-                            <span><i class="fas fa-users"></i> до 20 человек</span>
+                <div class="upcoming-grid">
+                    <!-- Карточка 1 -->
+                    <div class="upcoming-card">
+                        <div class="card-badge">Скоро</div>
+                        <div class="card-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">июня</span>
                         </div>
-                        <div class="workshop-footer">
-                            <span class="workshop-price">Бесплатно</span>
-                            <a href="#" class="btn-small">Записаться</a>
-                        </div>
-                    </div>
-
-                    <!-- Мастер-класс 2 -->
-                    <div class="workshop-card">
-                        <div class="workshop-date">22 июня, 18:30</div>
-                        <h3>Стратегии викингов</h3>
-                        <p class="workshop-leader">Ведущий: Егор Морозов, реконструктор</p>
-                        <p class="workshop-description">Хнефатафл и тавлеи: тактика северных воинов. Узнайте, как викинги тренировали стратегическое мышление перед битвами.</p>
-                        <div class="workshop-details">
-                            <span><i class="fas fa-map-marker-alt"></i> Санкт-Петербург, Невский пр., 28</span>
-                            <span><i class="fas fa-clock"></i> 2.5 часа</span>
-                            <span><i class="fas fa-users"></i> до 15 человек</span>
-                        </div>
-                        <div class="workshop-footer">
-                            <span class="workshop-price">1500 ₽</span>
-                            <a href="#" class="btn-small">Записаться</a>
+                        <div class="card-content">
+                            <h3>Игры Древнего Египта</h3>
+                            <p class="card-leader">Дмитрий Соколов, историк-египтолог</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 19:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Москва, очно</span>
+                            </div>
+                            <p class="card-description">Сенет, манкала и мехен — учимся играть как фараоны. Погружение в культуру и религиозное значение игр Древнего Египта.</p>
+                            <div class="card-footer">
+                                <span class="card-price">Бесплатно</span>
+                                <a href="#" class="card-btn">Записаться</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Мастер-класс 3 -->
-                    <div class="workshop-card">
-                        <div class="workshop-date">5 июля, 17:00</div>
-                        <h3>Философия Го</h3>
-                        <p class="workshop-leader">Ведущий: Александр Ли, мастер Го (3 дан)</p>
-                        <p class="workshop-description">Древняя китайская стратегия для современного мышления. Основы игры, базовые стратегии и философские принципы Го.</p>
-                        <div class="workshop-details">
-                            <span><i class="fas fa-map-marker-alt"></i> Онлайн (Zoom)</span>
-                            <span><i class="fas fa-clock"></i> 2 часа</span>
-                            <span><i class="fas fa-users"></i> без ограничений</span>
+                    <!-- Карточка 2 -->
+                    <div class="upcoming-card featured">
+                        <div class="card-badge">Хит</div>
+                        <div class="card-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">июня</span>
                         </div>
-                        <div class="workshop-footer">
-                            <span class="workshop-price">2000 ₽</span>
-                            <a href="#" class="btn-small">Записаться</a>
-                        </div>
-                    </div>
-
-                    <!-- Мастер-класс 4 -->
-                    <div class="workshop-card">
-                        <div class="workshop-date">12 июля, 16:00</div>
-                        <h3>Игры инков и майя</h3>
-                        <p class="workshop-leader">Ведущий: Мария Родригес, этнограф</p>
-                        <p class="workshop-description">Патолли, пука и ритуальные игры Мезоамерики. Игры, связанные с космологией и религиозными представлениями древних цивилизаций.</p>
-                        <div class="workshop-details">
-                            <span><i class="fas fa-map-marker-alt"></i> Казань, ул. Баумана, 7</span>
-                            <span><i class="fas fa-clock"></i> 2 часа</span>
-                            <span><i class="fas fa-users"></i> до 15 человек</span>
-                        </div>
-                        <div class="workshop-footer">
-                            <span class="workshop-price">1800 ₽</span>
-                            <a href="#" class="btn-small">Записаться</a>
+                        <div class="card-content">
+                            <h3>Стратегии викингов</h3>
+                            <p class="card-leader">Егор Морозов, реконструктор</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 18:30</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</span>
+                            </div>
+                            <p class="card-description">Хнефатафл и тавлеи: тактика северных воинов. Узнайте, как викинги тренировали стратегическое мышление перед битвами.</p>
+                            <div class="card-footer">
+                                <span class="card-price">1500 ₽</span>
+                                <a href="#" class="card-btn">Записаться</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Мастер-класс 5 -->
-                    <div class="workshop-card">
-                        <div class="workshop-date">19 июля, 15:00</div>
-                        <h3>Африканская манкала</h3>
-                        <p class="workshop-leader">Ведущий: Кваме Нкрума, коллекционер игр</p>
-                        <p class="workshop-description">Семейство игр с перемещением семян. От простых вариантов до сложных стратегий. История и культурное значение манкалы в Африке.</p>
-                        <div class="workshop-details">
-                            <span><i class="fas fa-map-marker-alt"></i> Онлайн (Zoom)</span>
-                            <span><i class="fas fa-clock"></i> 1.5 часа</span>
-                            <span><i class="fas fa-users"></i> без ограничений</span>
+                    <!-- Карточка 3 -->
+                    <div class="upcoming-card">
+                        <div class="card-badge">Новый</div>
+                        <div class="card-date">
+                            <span class="date-day">5</span>
+                            <span class="date-month">июля</span>
                         </div>
-                        <div class="workshop-footer">
-                            <span class="workshop-price">1500 ₽</span>
-                            <a href="#" class="btn-small">Записаться</a>
+                        <div class="card-content">
+                            <h3>Философия Го</h3>
+                            <p class="card-leader">Александр Ли, мастер Го (3 дан)</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 17:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Онлайн</span>
+                            </div>
+                            <p class="card-description">Древняя китайская стратегия для современного мышления. Основы игры, базовые стратегии и философские принципы Го.</p>
+                            <div class="card-footer">
+                                <span class="card-price">2000 ₽</span>
+                                <a href="#" class="card-btn">Записаться</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Мастер-класс 6 -->
-                    <div class="workshop-card">
-                        <div class="workshop-date">26 июля, 14:00</div>
-                        <h3>Средневековые шахматы</h3>
-                        <p class="workshop-leader">Ведущий: Владимир Петров, гроссмейстер</p>
-                        <p class="workshop-description">Эволюция шахмат от чатуранги до современных правил. Необычные вариации шахмат разных эпох и народов.</p>
-                        <div class="workshop-details">
-                            <span><i class="fas fa-map-marker-alt"></i> Нижний Новгород, ул. Большая Покровская, 10</span>
-                            <span><i class="fas fa-clock"></i> 2.5 часа</span>
-                            <span><i class="fas fa-users"></i> до 20 человек</span>
+                    <!-- Карточка 4 -->
+                    <div class="upcoming-card">
+                        <div class="card-date">
+                            <span class="date-day">12</span>
+                            <span class="date-month">июля</span>
                         </div>
-                        <div class="workshop-footer">
-                            <span class="workshop-price">2000 ₽</span>
-                            <a href="#" class="btn-small">Записаться</a>
+                        <div class="card-content">
+                            <h3>Игры инков и майя</h3>
+                            <p class="card-leader">Мария Родригес, этнограф</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 16:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Казань</span>
+                            </div>
+                            <p class="card-description">Патолли, пука и ритуальные игры Мезоамерики. Игры, связанные с космологией и религиозными представлениями древних цивилизаций.</p>
+                            <div class="card-footer">
+                                <span class="card-price">1800 ₽</span>
+                                <a href="#" class="card-btn">Записаться</a>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="upcoming-card">
+                        <div class="card-date">
+                            <span class="date-day">19</span>
+                            <span class="date-month">июля</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Африканская манкала</h3>
+                            <p class="card-leader">Кваме Нкрума, коллекционер игр</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 15:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Онлайн</span>
+                            </div>
+                            <p class="card-description">Семейство игр с перемещением семян. От простых вариантов до сложных стратегий. История и культурное значение манкалы в Африке.</p>
+                            <div class="card-footer">
+                                <span class="card-price">1500 ₽</span>
+                                <a href="#" class="card-btn">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 6 -->
+                    <div class="upcoming-card">
+                        <div class="card-date">
+                            <span class="date-day">26</span>
+                            <span class="date-month">июля</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Средневековые шахматы</h3>
+                            <p class="card-leader">Владимир Петров, гроссмейстер</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 14:00</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Нижний Новгород</span>
+                            </div>
+                            <p class="card-description">Эволюция шахмат от чатуранги до современных правил. Необычные вариации шахмат разных эпох и народов.</p>
+                            <div class="card-footer">
+                                <span class="card-price">2000 ₽</span>
+                                <a href="#" class="card-btn">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="btn-outline">Все мастер-классы →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Календарь событий -->
+        <section class="calendar-section">
+            <div class="container">
+                <h2 class="section-title">Календарь событий</h2>
+                
+                <div class="calendar-grid">
+                    <!-- Июнь -->
+                    <div class="calendar-month">
+                        <h3>Июнь 2025</h3>
+                        <ul class="calendar-events">
+                            <li>
+                                <span class="event-day">15</span>
+                                <div class="event-info">
+                                    <strong>Игры Древнего Египта</strong>
+                                    <span>Москва, 19:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="event-day">22</span>
+                                <div class="event-info">
+                                    <strong>Стратегии викингов</strong>
+                                    <span>СПб, 18:30</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="event-day">28</span>
+                                <div class="event-info">
+                                    <strong>Лекция "История шахмат"</strong>
+                                    <span>Онлайн, 20:00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Июль -->
+                    <div class="calendar-month">
+                        <h3>Июль 2025</h3>
+                        <ul class="calendar-events">
+                            <li>
+                                <span class="event-day">5</span>
+                                <div class="event-info">
+                                    <strong>Философия Го</strong>
+                                    <span>Онлайн, 17:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="event-day">12</span>
+                                <div class="event-info">
+                                    <strong>Игры инков и майя</strong>
+                                    <span>Казань, 16:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="event-day">19</span>
+                                <div class="event-info">
+                                    <strong>Африканская манкала</strong>
+                                    <span>Онлайн, 15:00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Август -->
+                    <div class="calendar-month">
+                        <h3>Август 2025</h3>
+                        <ul class="calendar-events">
+                            <li>
+                                <span class="event-day">2</span>
+                                <div class="event-info">
+                                    <strong>Турнир по Го</strong>
+                                    <span>Москва, 12:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="event-day">14</span>
+                                <div class="event-info">
+                                    <strong>Фестиваль игр</strong>
+                                    <span>ВДНХ, весь день</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="event-day">24</span>
+                                <div class="event-info">
+                                    <strong>Игры народов Севера</strong>
+                                    <span>Онлайн, 18:00</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- События и фестивали -->
-        <section class="events-section">
+        <!-- Наши эксперты -->
+        <section class="experts-section">
             <div class="container">
-                <h2 class="section-title">Фестивали и турниры</h2>
+                <h2 class="section-title">Ведущие мастер-классов</h2>
                 
-                <div class="events-list">
-                    <!-- Событие 1 -->
-                    <div class="event-item">
-                        <div class="event-date-large">
-                            <span class="event-day">24-25</span>
-                            <span class="event-month">августа</span>
+                <div class="experts-grid">
+                    <div class="expert-card">
+                        <div class="expert-image">
+                            <i class="fas fa-user-graduate"></i>
                         </div>
-                        <div class="event-content">
-                            <h3>Фестиваль традиционных игр народов мира</h3>
-                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Москва, ВДНХ, павильон "Культура"</p>
-                            <p class="event-description">Двухдневный фестиваль с мастер-классами, турнирами и выставкой редких игр. Более 30 игр из разных уголков планеты.</p>
-                            <div class="event-meta">
-                                <span><i class="fas fa-clock"></i> 11:00 - 20:00</span>
-                                <span><i class="fas fa-ticket-alt"></i> Вход свободный</span>
-                            </div>
-                            <a href="#" class="event-link">Подробнее →</a>
-                        </div>
+                        <h3>Дмитрий Соколов</h3>
+                        <p>Историк-египтолог, к.и.н.</p>
+                        <span class="expert-specialization">Древний Египет, сенет</span>
                     </div>
 
-                    <!-- Событие 2 -->
-                    <div class="event-item">
-                        <div class="event-date-large">
-                            <span class="event-day">7</span>
-                            <span class="event-month">сентября</span>
+                    <div class="expert-card">
+                        <div class="expert-image">
+                            <i class="fas fa-user-astronaut"></i>
                         </div>
-                        <div class="event-content">
-                            <h3>Открытый турнир по Го</h3>
-                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Санкт-Петербург, Дом журналиста</p>
-                            <p class="event-description">Турнир для игроков разного уровня. Любители и профессионалы. Призы и подарки от организаторов.</p>
-                            <div class="event-meta">
-                                <span><i class="fas fa-clock"></i> 10:00 - 18:00</span>
-                                <span><i class="fas fa-ticket-alt"></i> Взнос: 500 ₽</span>
-                            </div>
-                            <a href="#" class="event-link">Подробнее →</a>
-                        </div>
+                        <h3>Егор Морозов</h3>
+                        <p>Реконструктор, историк</p>
+                        <span class="expert-specialization">Эпоха викингов, тавлеи</span>
                     </div>
 
-                    <!-- Событие 3 -->
-                    <div class="event-item">
-                        <div class="event-date-large">
-                            <span class="event-day">14-15</span>
-                            <span class="event-month">сентября</span>
+                    <div class="expert-card">
+                        <div class="expert-image">
+                            <i class="fas fa-user-ninja"></i>
                         </div>
-                        <div class="event-content">
-                            <h3>Конференция "Игровое наследие человечества"</h3>
-                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Онлайн</p>
-                            <p class="event-description">Научно-практическая конференция с участием этнографов, историков и коллекционеров из 12 стран. Доклады и круглые столы.</p>
-                            <div class="event-meta">
-                                <span><i class="fas fa-clock"></i> 12:00 - 20:00</span>
-                                <span><i class="fas fa-ticket-alt"></i> Бесплатно, по регистрации</span>
-                            </div>
-                            <a href="#" class="event-link">Подробнее →</a>
+                        <h3>Александр Ли</h3>
+                        <p>Мастер Го (3 дан)</p>
+                        <span class="expert-specialization">Го, сёги, восточные стратегии</span>
+                    </div>
+
+                    <div class="expert-card">
+                        <div class="expert-image">
+                            <i class="fas fa-user-tie"></i>
                         </div>
+                        <h3>Мария Родригес</h3>
+                        <p>Этнограф, исследователь</p>
+                        <span class="expert-specialization">Культуры Мезоамерики</span>
+                    </div>
+
+                    <div class="expert-card">
+                        <div class="expert-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Кваме Нкрума</h3>
+                        <p>Коллекционер игр</p>
+                        <span class="expert-specialization">Африка, манкала</span>
+                    </div>
+
+                    <div class="expert-card">
+                        <div class="expert-image">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <h3>Владимир Петров</h3>
+                        <p>Гроссмейстер, тренер</p>
+                        <span class="expert-specialization">Шахматы, история игр</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Лекции в записи -->
-        <section class="recorded-lectures">
+        <section class="recorded-section">
             <div class="container">
                 <h2 class="section-title">Лекции в записи</h2>
                 
-                <div class="lectures-grid">
-                    <!-- Лекция 1 -->
-                    <div class="lecture-card">
-                        <div class="lecture-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <div class="lecture-content">
+                <div class="recorded-grid">
+                    <a href="#" class="recorded-item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="recorded-info">
                             <h3>История шахмат: от Индии до Европы</h3>
-                            <p>Лектор: Иван Смирнов, историк</p>
-                            <div class="lecture-meta">
-                                <span><i class="fas fa-clock"></i> 45 минут</span>
-                                <span class="lecture-price">Бесплатно</span>
-                            </div>
-                            <a href="#" class="lecture-link">Смотреть →</a>
+                            <p>Иван Смирнов • 45 мин • Бесплатно</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- Лекция 2 -->
-                    <div class="lecture-card">
-                        <div class="lecture-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <div class="lecture-content">
+                    <a href="#" class="recorded-item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="recorded-info">
                             <h3>Игры викингов и их значение</h3>
-                            <p>Лектор: Анна Новикова, этнограф</p>
-                            <div class="lecture-meta">
-                                <span><i class="fas fa-clock"></i> 50 минут</span>
-                                <span class="lecture-price">300 ₽</span>
-                            </div>
-                            <a href="#" class="lecture-link">Смотреть →</a>
+                            <p>Анна Новикова • 50 мин • 300 ₽</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- Лекция 3 -->
-                    <div class="lecture-card">
-                        <div class="lecture-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <div class="lecture-content">
+                    <a href="#" class="recorded-item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="recorded-info">
                             <h3>Манкала: математика пустыни</h3>
-                            <p>Лектор: Дмитрий Соколов, историк</p>
-                            <div class="lecture-meta">
-                                <span><i class="fas fa-clock"></i> 35 минут</span>
-                                <span class="lecture-price">200 ₽</span>
-                            </div>
-                            <a href="#" class="lecture-link">Смотреть →</a>
+                            <p>Дмитрий Соколов • 35 мин • 200 ₽</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <!-- Лекция 4 -->
-                    <div class="lecture-card">
-                        <div class="lecture-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <div class="lecture-content">
+                    <a href="#" class="recorded-item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="recorded-info">
                             <h3>Философия Го для начинающих</h3>
-                            <p>Лектор: Александр Ли, мастер Го</p>
-                            <div class="lecture-meta">
-                                <span><i class="fas fa-clock"></i> 60 минут</span>
-                                <span class="lecture-price">Бесплатно</span>
-                            </div>
-                            <a href="#" class="lecture-link">Смотреть →</a>
+                            <p>Александр Ли • 60 мин • Бесплатно</p>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="#" class="recorded-item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="recorded-info">
+                            <h3>Сенет: путь в загробный мир</h3>
+                            <p>Дмитрий Соколов • 40 мин • 250 ₽</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="recorded-item">
+                        <i class="fas fa-play-circle"></i>
+                        <div class="recorded-info">
+                            <h3>Нарды: игра королей</h3>
+                            <p>Петр Васильев • 30 мин • Бесплатно</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="btn-outline">Все записи →</a>
                 </div>
             </div>
         </section>
 
-        <!-- Форма заявки на проведение мастер-класса -->
-        <section class="workshop-request">
+        <!-- Форма заявки -->
+        <section class="request-section">
             <div class="container">
-                <div class="request-wrapper">
+                <div class="request-box">
                     <h2>Хотите провести свой мастер-класс?</h2>
                     <p>Если вы этнограф, историк, коллекционер или мастер традиционных игр, мы будем рады сотрудничеству.</p>
-                    <form class="request-form">
-                        <div class="form-row">
-                            <input type="text" placeholder="Ваше имя" required>
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-row">
-                            <input type="text" placeholder="Тема мастер-класса" required>
-                            <input type="text" placeholder="Город (или онлайн)">
-                        </div>
-                        <div class="form-row">
-                            <textarea placeholder="Краткое описание" rows="4"></textarea>
-                        </div>
+                    <form class="request-form-simple">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Тема мастер-класса">
                         <button type="submit" class="btn-primary">Отправить заявку</button>
                     </form>
                 </div>
@@ -313,7 +462,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
