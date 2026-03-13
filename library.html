@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Game Academy | Библиотека</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-globe-asia logo-icon"></i>
+                    <div class="logo-text">
+                        <h1>WORLD GAME ACADEMY</h1>
+                        <p>АКАДЕМИЯ ТРАДИЦИОННЫХ ИГР</p>
+                    </div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html" class="active">Библиотека</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="btn-login">Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero секция библиотеки -->
+        <section class="library-hero">
+            <div class="container">
+                <div class="library-hero-content">
+                    <h1>Библиотека знаний <span class="accent-text">об играх мира</span></h1>
+                    <p>Собрание научных работ, этнографических исследований, древних манускриптов и документальных фильмов о традиционных играх народов мира.</p>
+                    <div class="library-hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Материалов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Языков</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3000+</span>
+                            <span class="stat-label">Лет истории</span>
+                        </div>
+                    </div>
+                    <div class="library-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Поиск по библиотеке...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Категории библиотеки -->
+        <section class="library-categories">
+            <div class="container">
+                <h2 class="section-title">Разделы библиотеки</h2>
+                <div class="categories-grid">
+                    <a href="#books" class="category-card">
+                        <div class="category-icon"><i class="fas fa-book"></i></div>
+                        <h3>Книги</h3>
+                        <p>Научные труды и монографии</p>
+                        <span class="category-count">45 изданий</span>
+                    </a>
+                    <a href="#manuscripts" class="category-card">
+                        <div class="category-icon"><i class="fas fa-scroll"></i></div>
+                        <h3>Манускрипты</h3>
+                        <p>Древние рукописи и описания</p>
+                        <span class="category-count">23 документа</span>
+                    </a>
+                    <a href="#articles" class="category-card">
+                        <div class="category-icon"><i class="fas fa-newspaper"></i></div>
+                        <h3>Статьи</h3>
+                        <p>Исследования и публикации</p>
+                        <span class="category-count">87 статей</span>
+                    </a>
+                    <a href="#video" class="category-card">
+                        <div class="category-icon"><i class="fas fa-video"></i></div>
+                        <h3>Видео</h3>
+                        <p>Документальные фильмы</p>
+                        <span class="category-count">32 фильма</span>
+                    </a>
+                    <a href="#audio" class="category-card">
+                        <div class="category-icon"><i class="fas fa-headphones"></i></div>
+                        <h3>Аудио</h3>
+                        <p>Лекции и подкасты</p>
+                        <span class="category-count">18 записей</span>
+                    </a>
+                    <a href="#maps" class="category-card">
+                        <div class="category-icon"><i class="fas fa-map"></i></div>
+                        <h3>Карты</h3>
+                        <p>Интерактивные карты игр</p>
+                        <span class="category-count">5 карт</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новые поступления -->
+        <section class="new-acquisitions">
+            <div class="container">
+                <h2 class="section-title">Новые поступления</h2>
+                <div class="acquisitions-grid">
+                    <div class="acquisition-card">
+                        <div class="acquisition-badge">Новинка</div>
+                        <div class="acquisition-type"><i class="fas fa-book"></i> Книга</div>
+                        <h3>Энциклопедия традиционных игр Азии</h3>
+                        <p class="acquisition-author">Иванов А.П., Ли С.</p>
+                        <p class="acquisition-description">Полное собрание правил и истории 150 игр Востока: от Го до сёги, от маджонга до пачиси.</p>
+                        <div class="acquisition-meta">
+                            <span>2024</span>
+                            <span>450 стр.</span>
+                            <span>PDF</span>
+                        </div>
+                        <a href="#" class="acquisition-link">Читать →</a>
+                    </div>
+
+                    <div class="acquisition-card">
+                        <div class="acquisition-badge">Эксклюзив</div>
+                        <div class="acquisition-type"><i class="fas fa-scroll"></i> Манускрипт</div>
+                        <h3>Книга игр фараонов (факсимиле)</h3>
+                        <p class="acquisition-author">Перевод: Соколов Д.</p>
+                        <p class="acquisition-description">Папирус с описанием сенета, мехена и других игр Древнего Египта. Оригинал датируется 1500 г. до н.э.</p>
+                        <div class="acquisition-meta">
+                            <span>XV в. до н.э.</span>
+                            <span>32 стр.</span>
+                            <span>PDF + фото</span>
+                        </div>
+                        <a href="#" class="acquisition-link">Читать →</a>
+                    </div>
+
+                    <div class="acquisition-card">
+                        <div class="acquisition-type"><i class="fas fa-video"></i> Фильм</div>
+                        <h3>Игры викингов: реконструкция</h3>
+                        <p class="acquisition-author">Реж. Морозов Е.</p>
+                        <p class="acquisition-description">Документальный фильм о хнефатафле и других играх скандинавов. Съемки в Исландии с участием историков.</p>
+                        <div class="acquisition-meta">
+                            <span>2024</span>
+                            <span>56 мин</span>
+                            <span>HD</span>
+                        </div>
+                        <a href="#" class="acquisition-link">Смотреть →</a>
+                    </div>
+
+                    <div class="acquisition-card">
+                        <div class="acquisition-type"><i class="fas fa-newspaper"></i> Статья</div>
+                        <h3>Математика манкалы</h3>
+                        <p class="acquisition-author">Петров В.Н.</p>
+                        <p class="acquisition-description">Исследование комбинаторных возможностей игры манкала. Анализ стратегий и выигрышных позиций.</p>
+                        <div class="acquisition-meta">
+                            <span>2023</span>
+                            <span>24 стр.</span>
+                            <span>PDF</span>
+                        </div>
+                        <a href="#" class="acquisition-link">Читать →</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn-outline">Все новинки →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Книги -->
+        <section id="books" class="library-section">
+            <div class="container">
+                <h2 class="section-title">Книги и монографии</h2>
+                <div class="library-grid">
+                    <div class="library-item">
+                        <div class="item-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>История настольных игр</h3>
+                            <p class="item-author">Михайлов С.И.</p>
+                            <p class="item-description">От сенета до современности: эволюция игр в разных культурах.</p>
+                            <div class="item-meta">
+                                <span>2022</span>
+                                <span>320 стр.</span>
+                            </div>
+                            <a href="#" class="item-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="library-item">
+                        <div class="item-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Го: путь разума</h3>
+                            <p class="item-author">Александр Ли</p>
+                            <p class="item-description">Философия и стратегия древней китайской игры. Учебник для начинающих.</p>
+                            <div class="item-meta">
+                                <span>2023</span>
+                                <span>280 стр.</span>
+                            </div>
+                            <a href="#" class="item-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="library-item">
+                        <div class="item-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Игры народов Африки</h3>
+                            <p class="item-author">Нкрума К., Иванова Е.</p>
+                            <p class="item-description">Этнографическое исследование игр от манкалы до бао.</p>
+                            <div class="item-meta">
+                                <span>2021</span>
+                                <span>410 стр.</span>
+                            </div>
+                            <a href="#" class="item-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="library-item">
+                        <div class="item-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Средневековые игры Европы</h3>
+                            <p class="item-author">Петров В.Н.</p>
+                            <p class="item-description">Шахматы, тавлеи, нарды и их роль в культуре средневековья.</p>
+                            <div class="item-meta">
+                                <span>2020</span>
+                                <span>290 стр.</span>
+                            </div>
+                            <a href="#" class="item-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="library-item">
+                        <div class="item-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Игры доколумбовой Америки</h3>
+                            <p class="item-author">Родригес М.</p>
+                            <p class="item-description">Патолли, пука, тлачтли и их ритуальное значение.</p>
+                            <div class="item-meta">
+                                <span>2022</span>
+                                <span>350 стр.</span>
+                            </div>
+                            <a href="#" class="item-link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="library-item">
+                        <div class="item-cover">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="item-info">
+                            <h3>Энциклопедия игр мира</h3>
+                            <p class="item-author">Коллектив авторов</p>
+                            <p class="item-description">Полное собрание 500+ игр с правилами и историей.</p>
+                            <div class="item-meta">
+                                <span>2024</span>
+                                <span>850 стр.</span>
+                            </div>
+                            <a href="#" class="item-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn-outline">Все книги →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Древние манускрипты -->
+        <section id="manuscripts" class="manuscripts-section">
+            <div class="container">
+                <h2 class="section-title">Древние манускрипты</h2>
+                <div class="manuscripts-grid">
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Папирус "Игры фараонов"</h3>
+                        <p>Египет, 1500 г. до н.э.</p>
+                        <p class="manuscript-description">Описание сенета, мехена и других игр Древнего Египта.</p>
+                        <a href="#" class="manuscript-link">Просмотр →</a>
+                    </div>
+
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Кодекс о играх майя</h3>
+                        <p>Мезоамерика, XII век</p>
+                        <p class="manuscript-description">Иероглифические тексты о пука и ритуальных играх.</p>
+                        <a href="#" class="manuscript-link">Просмотр →</a>
+                    </div>
+
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Скандинавская сага о тавлеях</h3>
+                        <p>Исландия, XIII век</p>
+                        <p class="manuscript-description">Упоминания игр викингов в древних сагах.</p>
+                        <a href="#" class="manuscript-link">Просмотр →</a>
+                    </div>
+
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Китайский трактат о Го</h3>
+                        <p>Китай, X век</p>
+                        <p class="manuscript-description">Древнейшее руководство по стратегии Го.</p>
+                        <a href="#" class="manuscript-link">Просмотр →</a>
+                    </div>
+
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Персидский манускрипт о нардах</h3>
+                        <p>Персия, VII век</p>
+                        <p class="manuscript-description">Легенды о создании нард и правила игры.</p>
+                        <a href="#" class="manuscript-link">Просмотр →</a>
+                    </div>
+
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Русская летопись о тавлеях</h3>
+                        <p>Новгород, XIV век</p>
+                        <p class="manuscript-description">Упоминания славянских игр в берестяных грамотах.</p>
+                        <a href="#" class="manuscript-link">Просмотр →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статьи и исследования -->
+        <section id="articles" class="articles-section">
+            <div class="container">
+                <h2 class="section-title">Статьи и исследования</h2>
+                <div class="articles-list">
+                    <a href="#" class="article-item">
+                        <div class="article-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="article-content">
+                            <h3>Математические основы манкалы</h3>
+                            <p class="article-meta">Петров В.Н. • Журнал этнографии • №3, 2023</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="article-item">
+                        <div class="article-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="article-content">
+                            <h3>Шахматы как отражение средневекового общества</h3>
+                            <p class="article-meta">Смирнова Е.А. • Исторический вестник • №2, 2024</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="article-item">
+                        <div class="article-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="article-content">
+                            <h3>Символизм игры сенет в религии Древнего Египта</h3>
+                            <p class="article-meta">Соколов Д. • Вопросы истории • №4, 2023</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="article-item">
+                        <div class="article-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="article-content">
+                            <h3>Го и философия дзен</h3>
+                            <p class="article-meta">Ли А. • Восточная культура • №1, 2024</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="article-item">
+                        <div class="article-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="article-content">
+                            <h3>Игры викингов: археологические находки</h3>
+                            <p class="article-meta">Морозов Е. • Археология Севера • №5, 2023</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="article-item">
+                        <div class="article-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="article-content">
+                            <h3>Реконструкция игры патолли ацтеков</h3>
+                            <p class="article-meta">Родригес М. • Этнографическое обозрение • №2, 2024</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn-outline">Все статьи →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видеотека -->
+        <section id="video" class="video-section">
+            <div class="container">
+                <h2 class="section-title">Видеотека</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Игры Древнего Египта</h3>
+                        <p>Документальный фильм, 45 мин</p>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Стратегии викингов</h3>
+                        <p>Реконструкция, 35 мин</p>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Мастер-класс по Го</h3>
+                        <p>Александр Ли, 60 мин</p>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Африканская манкала</h3>
+                        <p>Этнографическая экспедиция, 40 мин</p>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Шахматы: история и эволюция</h3>
+                        <p>Лекция, 50 мин</p>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Игры инков и майя</h3>
+                        <p>Реконструкция, 30 мин</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Карты -->
+        <section id="maps" class="maps-section">
+            <div class="container">
+                <h2 class="section-title">Интерактивные карты</h2>
+                <div class="maps-grid">
+                    <a href="#" class="map-card">
+                        <i class="fas fa-globe-asia"></i>
+                        <h3>Карта игр Азии</h3>
+                        <p>Китай, Япония, Корея, Индия</p>
+                    </a>
+                    <a href="#" class="map-card">
+                        <i class="fas fa-globe-africa"></i>
+                        <h3>Карта игр Африки</h3>
+                        <p>Египет, Восточная Африка</p>
+                    </a>
+                    <a href="#" class="map-card">
+                        <i class="fas fa-globe-europe"></i>
+                        <h3>Карта игр Европы</h3>
+                        <p>Скандинавия, Русь, Средиземноморье</p>
+                    </a>
+                    <a href="#" class="map-card">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Карта игр Америки</h3>
+                        <p>Мезоамерика, индейцы</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>WORLD GAME ACADEMY</span>
+                    </a>
+                    <p>Академия традиционных игр народов мира</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="games.html">Игры мира</a></li>
+                        <li><a href="continents.html">Континенты</a></li>
+                        <li><a href="workshops.html">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 World Game Academy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
