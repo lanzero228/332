@@ -842,3 +842,523 @@ footer {
         gap: 8px;
     }
 }
+/* Hero секция мастер-классов */
+.workshops-hero {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #2a3a2a 100%);
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+.workshops-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.workshops-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.workshops-hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.workshops-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Категории мастер-классов */
+.workshops-categories {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.category-card {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-accent);
+}
+
+.category-card i {
+    font-size: 40px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Ближайшие мастер-классы */
+.workshops-upcoming {
+    padding: 60px 0;
+    background: #2a3a2a;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.upcoming-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+}
+
+.upcoming-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-accent);
+}
+
+.upcoming-card.featured {
+    border: 2px solid var(--accent);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent);
+    color: var(--bg-dark);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.card-date {
+    background: rgba(196, 154, 108, 0.1);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    border-right: 1px solid var(--border);
+}
+
+.date-day {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.date-month {
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card-leader {
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.card-meta i {
+    color: var(--accent);
+    margin-right: 5px;
+}
+
+.card-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.card-btn {
+    background: var(--accent);
+    color: var(--bg-dark);
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+    border: 2px solid var(--accent);
+}
+
+.card-btn:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: var(--bg-dark);
+}
+
+/* Календарь */
+.calendar-section {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.calendar-month {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.calendar-month h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.calendar-events {
+    list-style: none;
+}
+
+.calendar-events li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+.calendar-events li:last-child {
+    border-bottom: none;
+}
+
+.calendar-events .event-day {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 35px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.event-info span {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* Эксперты */
+.experts-section {
+    padding: 60px 0;
+    background: #2a3a2a;
+}
+
+.experts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.expert-card {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.expert-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.expert-image {
+    width: 80px;
+    height: 80px;
+    background: rgba(196, 154, 108, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.expert-image i {
+    font-size: 40px;
+    color: var(--accent);
+}
+
+.expert-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.expert-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.expert-specialization {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(196, 154, 108, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+/* Лекции в записи */
+.recorded-section {
+    padding: 60px 0;
+    background: var(--bg-dark);
+}
+
+.recorded-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.recorded-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: var(--bg-card);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.recorded-item:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
+}
+
+.recorded-item i {
+    font-size: 30px;
+    color: var(--accent);
+}
+
+.recorded-info h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.recorded-info p {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* Форма заявки */
+.request-section {
+    padding: 60px 0;
+    background: #1a2a1f;
+}
+
+.request-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.request-box h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.request-box p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.request-form-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-form-simple input {
+    width: 100%;
+    padding: 15px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.request-form-simple input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.request-form-simple .btn-primary {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .workshops-hero h1 {
+        font-size: 36px;
+    }
+    
+    .workshops-hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .upcoming-card {
+        flex-direction: column;
+    }
+    
+    .card-date {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .request-box {
+        padding: 30px 20px;
+    }
+}
