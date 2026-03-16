@@ -1460,3 +1460,1510 @@ footer::before {
         text-align: center;
     }
 }
+/* ===== МАСТЕР-КЛАССЫ ===== */
+
+/* Hero секция */
+.workshops-hero {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.workshops-hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200, 155, 94, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.workshops-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(200, 155, 94, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.workshops-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(200, 155, 94, 0.15);
+    color: var(--accent);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.accent-text {
+    color: var(--accent);
+    text-shadow: var(--glow);
+}
+
+.workshops-hero .hero-title {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.workshops-hero .hero-description {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.workshops-hero .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.workshops-hero .stat-card {
+    text-align: center;
+}
+
+.workshops-hero .stat-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 5px;
+    text-shadow: var(--glow);
+}
+
+.workshops-hero .stat-label {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-search {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.hero-search:focus-within {
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.hero-search i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.hero-search input {
+    flex: 1;
+    padding: 16px 20px 16px 50px;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.hero-search input::placeholder {
+    color: var(--text-muted);
+}
+
+.hero-search input:focus {
+    outline: none;
+}
+
+.search-btn {
+    padding: 0 25px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+    background: var(--accent-light);
+}
+
+/* Категории */
+.categories-section {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.categories-section .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.category-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent);
+    transform: translateX(-100%);
+    transition: var(--transition);
+}
+
+.category-card:hover::before {
+    transform: translateX(0);
+}
+
+.category-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(200, 155, 94, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 1px solid var(--accent);
+}
+
+.category-icon i {
+    font-size: 35px;
+    color: var(--accent);
+}
+
+.category-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.category-count {
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(200, 155, 94, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 13px;
+    border: 1px solid var(--accent);
+}
+
+/* Ближайшие мастер-классы */
+.upcoming-section {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.view-all {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.view-all:hover {
+    transform: translateX(5px);
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.workshop-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 0;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.workshop-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.workshop-card.featured {
+    border: 2px solid var(--accent);
+    background: linear-gradient(135deg, var(--bg-card), #2c3f2c);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 12px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.card-badge.hot {
+    background: #ff6b6b;
+    color: white;
+}
+
+.card-badge.new {
+    background: #4ecdc4;
+    color: white;
+}
+
+.card-date {
+    background: var(--bg-secondary);
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    border-right: 1px solid var(--border);
+}
+
+.date-box {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.date-day {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    display: block;
+}
+
+.date-month {
+    font-size: 16px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.date-time {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(200, 155, 94, 0.1);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.card-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card-leader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.card-leader i {
+    color: var(--accent);
+    width: 20px;
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-location i {
+    width: 20px;
+}
+
+.card-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    padding: 4px 12px;
+    background: rgba(200, 155, 94, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 12px;
+    border: 1px solid var(--accent);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.btn-card {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid var(--accent);
+}
+
+.btn-card:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+/* Календарь */
+.calendar-section {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.calendar-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.calendar-header h3 {
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.calendar-prev,
+.calendar-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.calendar-prev:hover,
+.calendar-next:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.calendar-month h4 {
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border);
+}
+
+.month-events {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.month-event {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.month-event:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
+}
+
+.month-event .event-day {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 35px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.event-details span {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* Наши мастера */
+.masters-section {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.masters-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.master-card {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.master-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.master-photo {
+    width: 100px;
+    height: 100px;
+    background: rgba(200, 155, 94, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 2px solid var(--accent);
+}
+
+.master-photo i {
+    font-size: 50px;
+    color: var(--accent);
+}
+
+.master-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.master-title {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.master-bio {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.master-specialization {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.master-specialization span {
+    padding: 4px 10px;
+    background: rgba(200, 155, 94, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 11px;
+    border: 1px solid var(--accent);
+}
+
+.master-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.master-link:hover {
+    transform: translateX(5px);
+}
+
+/* Лекции в записи */
+.recorded-lectures {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.recorded-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.recorded-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.recorded-item:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.recorded-icon i {
+    font-size: 40px;
+    color: var(--accent);
+}
+
+.recorded-content {
+    flex: 1;
+}
+
+.recorded-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.recorded-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.recorded-meta .free {
+    color: #4ecdc4;
+    font-weight: 600;
+}
+
+.recorded-meta .price {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Форма заявки */
+.request-section {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.request-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: var(--bg-card);
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.request-content {
+    padding: 50px 40px;
+}
+
+.request-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.request-content p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.request-benefits {
+    list-style: none;
+}
+
+.request-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.request-benefits i {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+.request-form-wrapper {
+    background: var(--bg-secondary);
+    padding: 50px 40px;
+}
+
+.request-form h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: var(--accent);
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.request-form input:focus,
+.request-form select:focus,
+.request-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.request-form select {
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid var(--accent);
+}
+
+.btn-submit:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+/* Адаптивность для мастер-классов */
+@media (max-width: 1200px) {
+    .upcoming-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .masters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .workshops-hero .hero-title {
+        font-size: 42px;
+    }
+    
+    .workshops-hero .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .categories-section .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .request-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .workshop-card {
+        flex-direction: column;
+    }
+    
+    .card-date {
+        flex-direction: row;
+        justify-content: space-around;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 15px;
+    }
+    
+    .date-box {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+    .masters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .categories-section .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .workshops-hero .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-search {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    
+    .search-btn {
+        padding: 12px;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .recorded-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .recorded-meta {
+        justify-content: center;
+    }
+    
+    .request-content,
+    .request-form-wrapper {
+        padding: 30px 20px;
+    }
+}
+/* Стили для поиска и фильтрации */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    margin-top: 30px;
+}
+
+.no-results i {
+    font-size: 60px;
+    color: var(--accent);
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+.no-results h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: var(--text-muted);
+}
+
+.filter-category.active {
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.filter-category.active .category-icon {
+    background: rgba(200, 155, 94, 0.2);
+}
+/* ===== КОНТАКТЫ И ПАРТНЕРЫ ===== */
+
+/* Hero секция */
+.contacts-hero {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contacts-hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(200, 155, 94, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contacts-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Контактная информация */
+.contact-info-section {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background: var(--bg-card);
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(200, 155, 94, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 1px solid var(--accent);
+}
+
+.contact-icon i {
+    font-size: 35px;
+    color: var(--accent);
+}
+
+.contact-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.contact-note {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: rgba(200, 155, 94, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 13px;
+    border: 1px solid var(--accent);
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    transform: translateX(5px);
+}
+
+/* Форма обратной связи */
+.feedback-section {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.feedback-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: var(--bg-card);
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.feedback-content {
+    padding: 50px 40px;
+}
+
+.section-title-left {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title-left::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.feedback-description {
+    color: var(--text-secondary);
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.feedback-benefits {
+    margin-bottom: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.benefit-item i {
+    font-size: 24px;
+    color: var(--accent);
+    margin-top: 3px;
+}
+
+.benefit-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.benefit-item p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.social-contacts h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.social-button.telegram {
+    background: #0088cc;
+    color: white;
+}
+
+.social-button.vk {
+    background: #4c75a3;
+    color: white;
+}
+
+.social-button.youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.social-button.instagram {
+    background: linear-gradient(45deg, #f09433, #d62976, #962fbf, #4f5bd5);
+    color: white;
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.feedback-form-container {
+    background: var(--bg-secondary);
+    padding: 50px 40px;
+}
+
+.feedback-form h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: var(--accent);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-checkbox input {
+    width: auto;
+}
+
+.form-checkbox label {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Партнеры */
+.partners-section {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.partner-card {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.partner-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.partner-logo {
+    width: 80px;
+    height: 80px;
+    background: rgba(200, 155, 94, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 1px solid var(--accent);
+}
+
+.partner-logo i {
+    font-size: 35px;
+    color: var(--accent);
+}
+
+.partner-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.partner-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.partner-type {
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(200, 155, 94, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-size: 12px;
+    border: 1px solid var(--accent);
+}
+
+/* Стать партнером */
+.become-partner-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.become-partner-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.become-partner-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.become-partner-content p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.partner-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.partner-benefit {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.partner-benefit:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.partner-benefit i {
+    font-size: 35px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.partner-benefit h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.partner-benefit p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Карта */
+.map-section {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.map-placeholder {
+    background: var(--bg-card);
+    padding: 60px 40px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.map-placeholder i {
+    font-size: 80px;
+    color: var(--accent);
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+.map-placeholder p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.map-coordinates {
+    margin-bottom: 30px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.transport-info {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.transport-info h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+.transport-info ul {
+    list-style: none;
+}
+
+.transport-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.transport-info i {
+    font-size: 16px;
+    color: var(--accent);
+    opacity: 1;
+    margin: 0;
+}
+
+/* Футер контакты */
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    color: var(--accent);
+    width: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .contact-grid,
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .partner-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .feedback-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid,
+    .partners-grid,
+    .partner-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feedback-content,
+    .feedback-form-container {
+        padding: 30px 20px;
+    }
+    
+    .map-placeholder {
+        padding: 30px 20px;
+    }
+    
+    .transport-info li {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-buttons {
+        flex-direction: column;
+    }
+    
+    .social-button {
+        justify-content: center;
+    }
+    
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .form-checkbox {
+        flex-direction: column;
+        text-align: center;
+    }
+}

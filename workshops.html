@@ -24,9 +24,10 @@
                         <li><a href="games.html">Игры мира</a></li>
                         <li><a href="continents.html">Континенты</a></li>
                         <li><a href="workshops.html" class="active">Мастер-классы</a></li>
+                        <li><a href="library.html">Библиотека</a></li>
                     </ul>
                 </nav>
-                <a href="#contact" class="btn-login">Контакты</a>
+                <a href="contacts.html" class="btn-login">Контакты</a>
             </div>
         </div>
     </header>
@@ -36,410 +37,557 @@
         <section class="workshops-hero">
             <div class="container">
                 <div class="workshops-hero-content">
-                    <h1>Мастер-классы по традиционным играм</h1>
-                    <p>Живое обучение с этнографами, историками и мастерами игр со всего мира. Очно и онлайн.</p>
-                    <div class="workshops-hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">30+</span>
-                            <span class="stat-label">Мастер-классов в год</span>
+                    <span class="hero-badge">Обучение у мастеров</span>
+                    <h1 class="hero-title">Мастер-классы по <span class="accent-text">традиционным играм</span></h1>
+                    <p class="hero-description">Живое обучение с этнографами, историками и мастерами игр со всего мира. Очно и онлайн.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Мастер-классов в год</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">15</span>
-                            <span class="stat-label">Экспертов</span>
+                        <div class="stat-card">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Экспертов</div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5</span>
-                            <span class="stat-label">Городов</span>
+                        <div class="stat-card">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Городов</div>
                         </div>
+                    </div>
+
+                    <div class="hero-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Найти мастер-класс по названию, ведущему или тегу...">
+                        <button class="search-btn" id="searchBtn">Найти</button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Категории мастер-классов -->
-        <section class="workshops-categories">
+        <section class="categories-section">
             <div class="container">
                 <h2 class="section-title">Выберите формат</h2>
                 <div class="categories-grid">
-                    <a href="#online" class="category-card">
-                        <i class="fas fa-laptop"></i>
+                    <a href="#" class="category-card filter-category" data-category="online">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
                         <h3>Онлайн</h3>
                         <p>Участвуйте из любой точки мира</p>
+                        <span class="category-count">12 мастер-классов</span>
                     </a>
-                    <a href="#offline" class="category-card">
-                        <i class="fas fa-building"></i>
+                    <a href="#" class="category-card filter-category" data-category="offline">
+                        <div class="category-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
                         <h3>Очно</h3>
                         <p>Встречи в городах России</p>
+                        <span class="category-count">8 мастер-классов</span>
                     </a>
-                    <a href="#recorded" class="category-card">
-                        <i class="fas fa-video"></i>
+                    <a href="#" class="category-card filter-category" data-category="recorded">
+                        <div class="category-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
                         <h3>В записи</h3>
                         <p>Лекции в любое удобное время</p>
+                        <span class="category-count">15 записей</span>
                     </a>
-                    <a href="#corporate" class="category-card">
-                        <i class="fas fa-briefcase"></i>
+                    <a href="#" class="category-card filter-category" data-category="corporate">
+                        <div class="category-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
                         <h3>Корпоративные</h3>
                         <p>Для команд и организаций</p>
+                        <span class="category-count">По запросу</span>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Ближайшие мастер-классы -->
-        <section class="workshops-upcoming">
+        <section class="upcoming-section">
             <div class="container">
-                <h2 class="section-title">Ближайшие мастер-классы</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Ближайшие мастер-классы</h2>
+                    <a href="#" class="view-all">Смотреть все →</a>
+                </div>
                 
-                <div class="upcoming-grid">
+                <div class="upcoming-grid" id="workshopsContainer">
                     <!-- Карточка 1 -->
-                    <div class="upcoming-card">
+                    <div class="workshop-card featured" data-category="offline" data-tags="сенет манкала египет древний">
                         <div class="card-badge">Скоро</div>
                         <div class="card-date">
-                            <span class="date-day">15</span>
-                            <span class="date-month">июня</span>
+                            <div class="date-box">
+                                <span class="date-day">15</span>
+                                <span class="date-month">июня</span>
+                            </div>
+                            <div class="date-time">19:00</div>
                         </div>
                         <div class="card-content">
-                            <h3>Игры Древнего Египта</h3>
-                            <p class="card-leader">Дмитрий Соколов, историк-египтолог</p>
-                            <div class="card-meta">
-                                <span><i class="fas fa-clock"></i> 19:00</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Москва, очно</span>
+                            <h3 class="workshop-title">Игры Древнего Египта</h3>
+                            <div class="card-leader">
+                                <i class="fas fa-user-graduate"></i>
+                                <span class="workshop-leader">Дмитрий Соколов, историк-египтолог</span>
+                            </div>
+                            <div class="card-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="workshop-location">Москва, ул. Тверская, 15</span>
                             </div>
                             <p class="card-description">Сенет, манкала и мехен — учимся играть как фараоны. Погружение в культуру и религиозное значение игр Древнего Египта.</p>
+                            <div class="card-tags">
+                                <span class="tag">Сенет</span>
+                                <span class="tag">Манкала</span>
+                                <span class="tag">Египет</span>
+                            </div>
                             <div class="card-footer">
-                                <span class="card-price">Бесплатно</span>
-                                <a href="#" class="card-btn">Записаться</a>
+                                <div class="card-price">Бесплатно</div>
+                                <a href="#" class="btn-card">Записаться</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Карточка 2 -->
-                    <div class="upcoming-card featured">
-                        <div class="card-badge">Хит</div>
+                    <div class="workshop-card" data-category="offline" data-tags="хнефатафл викинги тавлеи стратегия">
+                        <div class="card-badge hot">Хит</div>
                         <div class="card-date">
-                            <span class="date-day">22</span>
-                            <span class="date-month">июня</span>
+                            <div class="date-box">
+                                <span class="date-day">22</span>
+                                <span class="date-month">июня</span>
+                            </div>
+                            <div class="date-time">18:30</div>
                         </div>
                         <div class="card-content">
-                            <h3>Стратегии викингов</h3>
-                            <p class="card-leader">Егор Морозов, реконструктор</p>
-                            <div class="card-meta">
-                                <span><i class="fas fa-clock"></i> 18:30</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</span>
+                            <h3 class="workshop-title">Стратегии викингов</h3>
+                            <div class="card-leader">
+                                <i class="fas fa-user-astronaut"></i>
+                                <span class="workshop-leader">Егор Морозов, реконструктор</span>
+                            </div>
+                            <div class="card-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="workshop-location">Санкт-Петербург, Невский пр., 28</span>
                             </div>
                             <p class="card-description">Хнефатафл и тавлеи: тактика северных воинов. Узнайте, как викинги тренировали стратегическое мышление перед битвами.</p>
+                            <div class="card-tags">
+                                <span class="tag">Хнефатафл</span>
+                                <span class="tag">Викинги</span>
+                                <span class="tag">Тавлеи</span>
+                            </div>
                             <div class="card-footer">
-                                <span class="card-price">1500 ₽</span>
-                                <a href="#" class="card-btn">Записаться</a>
+                                <div class="card-price">1500 ₽</div>
+                                <a href="#" class="btn-card">Записаться</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Карточка 3 -->
-                    <div class="upcoming-card">
-                        <div class="card-badge">Новый</div>
+                    <div class="workshop-card" data-category="online" data-tags="го китай стратегия философия">
+                        <div class="card-badge new">Новый</div>
                         <div class="card-date">
-                            <span class="date-day">5</span>
-                            <span class="date-month">июля</span>
+                            <div class="date-box">
+                                <span class="date-day">5</span>
+                                <span class="date-month">июля</span>
+                            </div>
+                            <div class="date-time">17:00</div>
                         </div>
                         <div class="card-content">
-                            <h3>Философия Го</h3>
-                            <p class="card-leader">Александр Ли, мастер Го (3 дан)</p>
-                            <div class="card-meta">
-                                <span><i class="fas fa-clock"></i> 17:00</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Онлайн</span>
+                            <h3 class="workshop-title">Философия Го</h3>
+                            <div class="card-leader">
+                                <i class="fas fa-user-ninja"></i>
+                                <span class="workshop-leader">Александр Ли, мастер Го (3 дан)</span>
+                            </div>
+                            <div class="card-location">
+                                <i class="fas fa-globe"></i>
+                                <span class="workshop-location">Онлайн (Zoom)</span>
                             </div>
                             <p class="card-description">Древняя китайская стратегия для современного мышления. Основы игры, базовые стратегии и философские принципы Го.</p>
+                            <div class="card-tags">
+                                <span class="tag">Го</span>
+                                <span class="tag">Китай</span>
+                                <span class="tag">Стратегия</span>
+                            </div>
                             <div class="card-footer">
-                                <span class="card-price">2000 ₽</span>
-                                <a href="#" class="card-btn">Записаться</a>
+                                <div class="card-price">2000 ₽</div>
+                                <a href="#" class="btn-card">Записаться</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Карточка 4 -->
-                    <div class="upcoming-card">
+                    <div class="workshop-card" data-category="offline" data-tags="патолли майя инки америка">
                         <div class="card-date">
-                            <span class="date-day">12</span>
-                            <span class="date-month">июля</span>
+                            <div class="date-box">
+                                <span class="date-day">12</span>
+                                <span class="date-month">июля</span>
+                            </div>
+                            <div class="date-time">16:00</div>
                         </div>
                         <div class="card-content">
-                            <h3>Игры инков и майя</h3>
-                            <p class="card-leader">Мария Родригес, этнограф</p>
-                            <div class="card-meta">
-                                <span><i class="fas fa-clock"></i> 16:00</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Казань</span>
+                            <h3 class="workshop-title">Игры инков и майя</h3>
+                            <div class="card-leader">
+                                <i class="fas fa-user-tie"></i>
+                                <span class="workshop-leader">Мария Родригес, этнограф</span>
+                            </div>
+                            <div class="card-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="workshop-location">Казань, ул. Баумана, 7</span>
                             </div>
                             <p class="card-description">Патолли, пука и ритуальные игры Мезоамерики. Игры, связанные с космологией и религиозными представлениями древних цивилизаций.</p>
+                            <div class="card-tags">
+                                <span class="tag">Патолли</span>
+                                <span class="tag">Майя</span>
+                                <span class="tag">Инки</span>
+                            </div>
                             <div class="card-footer">
-                                <span class="card-price">1800 ₽</span>
-                                <a href="#" class="card-btn">Записаться</a>
+                                <div class="card-price">1800 ₽</div>
+                                <a href="#" class="btn-card">Записаться</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Карточка 5 -->
-                    <div class="upcoming-card">
+                    <div class="workshop-card" data-category="online" data-tags="манкала африка логика">
                         <div class="card-date">
-                            <span class="date-day">19</span>
-                            <span class="date-month">июля</span>
+                            <div class="date-box">
+                                <span class="date-day">19</span>
+                                <span class="date-month">июля</span>
+                            </div>
+                            <div class="date-time">15:00</div>
                         </div>
                         <div class="card-content">
-                            <h3>Африканская манкала</h3>
-                            <p class="card-leader">Кваме Нкрума, коллекционер игр</p>
-                            <div class="card-meta">
-                                <span><i class="fas fa-clock"></i> 15:00</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Онлайн</span>
+                            <h3 class="workshop-title">Африканская манкала</h3>
+                            <div class="card-leader">
+                                <i class="fas fa-user-graduate"></i>
+                                <span class="workshop-leader">Кваме Нкрума, коллекционер игр</span>
+                            </div>
+                            <div class="card-location">
+                                <i class="fas fa-globe"></i>
+                                <span class="workshop-location">Онлайн (Zoom)</span>
                             </div>
                             <p class="card-description">Семейство игр с перемещением семян. От простых вариантов до сложных стратегий. История и культурное значение манкалы в Африке.</p>
+                            <div class="card-tags">
+                                <span class="tag">Манкала</span>
+                                <span class="tag">Африка</span>
+                                <span class="tag">Логика</span>
+                            </div>
                             <div class="card-footer">
-                                <span class="card-price">1500 ₽</span>
-                                <a href="#" class="card-btn">Записаться</a>
+                                <div class="card-price">1500 ₽</div>
+                                <a href="#" class="btn-card">Записаться</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Карточка 6 -->
-                    <div class="upcoming-card">
+                    <div class="workshop-card" data-category="offline" data-tags="шахматы средневековье стратегия">
                         <div class="card-date">
-                            <span class="date-day">26</span>
-                            <span class="date-month">июля</span>
+                            <div class="date-box">
+                                <span class="date-day">26</span>
+                                <span class="date-month">июля</span>
+                            </div>
+                            <div class="date-time">14:00</div>
                         </div>
                         <div class="card-content">
-                            <h3>Средневековые шахматы</h3>
-                            <p class="card-leader">Владимир Петров, гроссмейстер</p>
-                            <div class="card-meta">
-                                <span><i class="fas fa-clock"></i> 14:00</span>
-                                <span><i class="fas fa-map-marker-alt"></i> Нижний Новгород</span>
+                            <h3 class="workshop-title">Средневековые шахматы</h3>
+                            <div class="card-leader">
+                                <i class="fas fa-user-astronaut"></i>
+                                <span class="workshop-leader">Владимир Петров, гроссмейстер</span>
+                            </div>
+                            <div class="card-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="workshop-location">Нижний Новгород, ул. Большая Покровская, 10</span>
                             </div>
                             <p class="card-description">Эволюция шахмат от чатуранги до современных правил. Необычные вариации шахмат разных эпох и народов.</p>
+                            <div class="card-tags">
+                                <span class="tag">Шахматы</span>
+                                <span class="tag">Средневековье</span>
+                                <span class="tag">Стратегия</span>
+                            </div>
                             <div class="card-footer">
-                                <span class="card-price">2000 ₽</span>
-                                <a href="#" class="card-btn">Записаться</a>
+                                <div class="card-price">2000 ₽</div>
+                                <a href="#" class="btn-card">Записаться</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="text-center">
-                    <a href="#" class="btn-outline">Все мастер-классы →</a>
+                
+                <div id="noResults" class="no-results" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Ничего не найдено</h3>
+                    <p>Попробуйте изменить поисковый запрос</p>
                 </div>
             </div>
         </section>
 
-        <!-- Календарь событий -->
+        <!-- Календарь мастер-классов -->
         <section class="calendar-section">
             <div class="container">
-                <h2 class="section-title">Календарь событий</h2>
+                <h2 class="section-title">Календарь мастер-классов</h2>
                 
-                <div class="calendar-grid">
-                    <!-- Июнь -->
-                    <div class="calendar-month">
-                        <h3>Июнь 2025</h3>
-                        <ul class="calendar-events">
-                            <li>
-                                <span class="event-day">15</span>
-                                <div class="event-info">
-                                    <strong>Игры Древнего Египта</strong>
-                                    <span>Москва, 19:00</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="event-day">22</span>
-                                <div class="event-info">
-                                    <strong>Стратегии викингов</strong>
-                                    <span>СПб, 18:30</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="event-day">28</span>
-                                <div class="event-info">
-                                    <strong>Лекция "История шахмат"</strong>
-                                    <span>Онлайн, 20:00</span>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="calendar-wrapper">
+                    <div class="calendar-header">
+                        <button class="calendar-prev"><i class="fas fa-chevron-left"></i></button>
+                        <h3>Июнь - Июль 2025</h3>
+                        <button class="calendar-next"><i class="fas fa-chevron-right"></i></button>
                     </div>
+                    
+                    <div class="calendar-grid">
+                        <!-- Июнь -->
+                        <div class="calendar-month">
+                            <h4>Июнь</h4>
+                            <div class="month-events">
+                                <div class="month-event">
+                                    <span class="event-day">15</span>
+                                    <div class="event-details">
+                                        <strong>Игры Древнего Египта</strong>
+                                        <span>19:00 • Москва</span>
+                                    </div>
+                                </div>
+                                <div class="month-event">
+                                    <span class="event-day">22</span>
+                                    <div class="event-details">
+                                        <strong>Стратегии викингов</strong>
+                                        <span>18:30 • СПб</span>
+                                    </div>
+                                </div>
+                                <div class="month-event">
+                                    <span class="event-day">28</span>
+                                    <div class="event-details">
+                                        <strong>Лекция "История шахмат"</strong>
+                                        <span>20:00 • Онлайн</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- Июль -->
-                    <div class="calendar-month">
-                        <h3>Июль 2025</h3>
-                        <ul class="calendar-events">
-                            <li>
-                                <span class="event-day">5</span>
-                                <div class="event-info">
-                                    <strong>Философия Го</strong>
-                                    <span>Онлайн, 17:00</span>
+                        <!-- Июль -->
+                        <div class="calendar-month">
+                            <h4>Июль</h4>
+                            <div class="month-events">
+                                <div class="month-event">
+                                    <span class="event-day">5</span>
+                                    <div class="event-details">
+                                        <strong>Философия Го</strong>
+                                        <span>17:00 • Онлайн</span>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="event-day">12</span>
-                                <div class="event-info">
-                                    <strong>Игры инков и майя</strong>
-                                    <span>Казань, 16:00</span>
+                                <div class="month-event">
+                                    <span class="event-day">12</span>
+                                    <div class="event-details">
+                                        <strong>Игры инков и майя</strong>
+                                        <span>16:00 • Казань</span>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="event-day">19</span>
-                                <div class="event-info">
-                                    <strong>Африканская манкала</strong>
-                                    <span>Онлайн, 15:00</span>
+                                <div class="month-event">
+                                    <span class="event-day">19</span>
+                                    <div class="event-details">
+                                        <strong>Африканская манкала</strong>
+                                        <span>15:00 • Онлайн</span>
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+                                <div class="month-event">
+                                    <span class="event-day">26</span>
+                                    <div class="event-details">
+                                        <strong>Средневековые шахматы</strong>
+                                        <span>14:00 • Нижний Новгород</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- Август -->
-                    <div class="calendar-month">
-                        <h3>Август 2025</h3>
-                        <ul class="calendar-events">
-                            <li>
-                                <span class="event-day">2</span>
-                                <div class="event-info">
-                                    <strong>Турнир по Го</strong>
-                                    <span>Москва, 12:00</span>
+                        <!-- Август -->
+                        <div class="calendar-month">
+                            <h4>Август</h4>
+                            <div class="month-events">
+                                <div class="month-event">
+                                    <span class="event-day">2</span>
+                                    <div class="event-details">
+                                        <strong>Турнир по Го</strong>
+                                        <span>12:00 • Москва</span>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="event-day">14</span>
-                                <div class="event-info">
-                                    <strong>Фестиваль игр</strong>
-                                    <span>ВДНХ, весь день</span>
+                                <div class="month-event">
+                                    <span class="event-day">14</span>
+                                    <div class="event-details">
+                                        <strong>Фестиваль игр</strong>
+                                        <span>Весь день • ВДНХ</span>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="event-day">24</span>
-                                <div class="event-info">
-                                    <strong>Игры народов Севера</strong>
-                                    <span>Онлайн, 18:00</span>
+                                <div class="month-event">
+                                    <span class="event-day">24</span>
+                                    <div class="event-details">
+                                        <strong>Игры народов Севера</strong>
+                                        <span>18:00 • Онлайн</span>
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Наши эксперты -->
-        <section class="experts-section">
+        <!-- Наши мастера -->
+        <section class="masters-section">
             <div class="container">
-                <h2 class="section-title">Ведущие мастер-классов</h2>
+                <h2 class="section-title">Наши мастера</h2>
                 
-                <div class="experts-grid">
-                    <div class="expert-card">
-                        <div class="expert-image">
+                <div class="masters-grid">
+                    <div class="master-card">
+                        <div class="master-photo">
                             <i class="fas fa-user-graduate"></i>
                         </div>
                         <h3>Дмитрий Соколов</h3>
-                        <p>Историк-египтолог, к.и.н.</p>
-                        <span class="expert-specialization">Древний Египет, сенет</span>
+                        <p class="master-title">Историк-египтолог, к.и.н.</p>
+                        <p class="master-bio">Автор 5 монографий по играм Древнего Египта. Участник археологических экспедиций в Луксоре.</p>
+                        <div class="master-specialization">
+                            <span>Сенет</span>
+                            <span>Мехен</span>
+                            <span>Египет</span>
+                        </div>
+                        <a href="#" class="master-link">Подробнее →</a>
                     </div>
 
-                    <div class="expert-card">
-                        <div class="expert-image">
+                    <div class="master-card">
+                        <div class="master-photo">
                             <i class="fas fa-user-astronaut"></i>
                         </div>
                         <h3>Егор Морозов</h3>
-                        <p>Реконструктор, историк</p>
-                        <span class="expert-specialization">Эпоха викингов, тавлеи</span>
+                        <p class="master-title">Реконструктор, историк</p>
+                        <p class="master-bio">Специалист по культуре викингов. Реконструирует древние игры по археологическим находкам.</p>
+                        <div class="master-specialization">
+                            <span>Хнефатафл</span>
+                            <span>Тавлеи</span>
+                            <span>Викинги</span>
+                        </div>
+                        <a href="#" class="master-link">Подробнее →</a>
                     </div>
 
-                    <div class="expert-card">
-                        <div class="expert-image">
+                    <div class="master-card">
+                        <div class="master-photo">
                             <i class="fas fa-user-ninja"></i>
                         </div>
                         <h3>Александр Ли</h3>
-                        <p>Мастер Го (3 дан)</p>
-                        <span class="expert-specialization">Го, сёги, восточные стратегии</span>
+                        <p class="master-title">Мастер Го (3 дан)</p>
+                        <p class="master-bio">Чемпион России по Го 2023. Автор книг "Го для начинающих" и "Стратегии Го".</p>
+                        <div class="master-specialization">
+                            <span>Го</span>
+                            <span>Сёги</span>
+                            <span>Стратегия</span>
+                        </div>
+                        <a href="#" class="master-link">Подробнее →</a>
                     </div>
 
-                    <div class="expert-card">
-                        <div class="expert-image">
+                    <div class="master-card">
+                        <div class="master-photo">
                             <i class="fas fa-user-tie"></i>
                         </div>
                         <h3>Мария Родригес</h3>
-                        <p>Этнограф, исследователь</p>
-                        <span class="expert-specialization">Культуры Мезоамерики</span>
-                    </div>
-
-                    <div class="expert-card">
-                        <div class="expert-image">
-                            <i class="fas fa-user-graduate"></i>
+                        <p class="master-title">Этнограф, исследователь</p>
+                        <p class="master-bio">Изучает культуры Мезоамерики. Участница экспедиций в Мексику и Гватемалу.</p>
+                        <div class="master-specialization">
+                            <span>Майя</span>
+                            <span>Ацтеки</span>
+                            <span>Патолли</span>
                         </div>
-                        <h3>Кваме Нкрума</h3>
-                        <p>Коллекционер игр</p>
-                        <span class="expert-specialization">Африка, манкала</span>
-                    </div>
-
-                    <div class="expert-card">
-                        <div class="expert-image">
-                            <i class="fas fa-user-astronaut"></i>
-                        </div>
-                        <h3>Владимир Петров</h3>
-                        <p>Гроссмейстер, тренер</p>
-                        <span class="expert-specialization">Шахматы, история игр</span>
+                        <a href="#" class="master-link">Подробнее →</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Лекции в записи -->
-        <section class="recorded-section">
+        <section class="recorded-lectures">
             <div class="container">
-                <h2 class="section-title">Лекции в записи</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Лекции в записи</h2>
+                    <a href="#" class="view-all">Все записи →</a>
+                </div>
                 
                 <div class="recorded-grid">
                     <a href="#" class="recorded-item">
-                        <i class="fas fa-play-circle"></i>
-                        <div class="recorded-info">
+                        <div class="recorded-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="recorded-content">
                             <h3>История шахмат: от Индии до Европы</h3>
-                            <p>Иван Смирнов • 45 мин • Бесплатно</p>
+                            <div class="recorded-meta">
+                                <span>Иван Смирнов</span>
+                                <span>45 мин</span>
+                                <span class="free">Бесплатно</span>
+                            </div>
                         </div>
                     </a>
 
                     <a href="#" class="recorded-item">
-                        <i class="fas fa-play-circle"></i>
-                        <div class="recorded-info">
+                        <div class="recorded-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="recorded-content">
                             <h3>Игры викингов и их значение</h3>
-                            <p>Анна Новикова • 50 мин • 300 ₽</p>
+                            <div class="recorded-meta">
+                                <span>Анна Новикова</span>
+                                <span>50 мин</span>
+                                <span class="price">300 ₽</span>
+                            </div>
                         </div>
                     </a>
 
                     <a href="#" class="recorded-item">
-                        <i class="fas fa-play-circle"></i>
-                        <div class="recorded-info">
+                        <div class="recorded-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="recorded-content">
                             <h3>Манкала: математика пустыни</h3>
-                            <p>Дмитрий Соколов • 35 мин • 200 ₽</p>
+                            <div class="recorded-meta">
+                                <span>Дмитрий Соколов</span>
+                                <span>35 мин</span>
+                                <span class="price">200 ₽</span>
+                            </div>
                         </div>
                     </a>
 
                     <a href="#" class="recorded-item">
-                        <i class="fas fa-play-circle"></i>
-                        <div class="recorded-info">
+                        <div class="recorded-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="recorded-content">
                             <h3>Философия Го для начинающих</h3>
-                            <p>Александр Ли • 60 мин • Бесплатно</p>
+                            <div class="recorded-meta">
+                                <span>Александр Ли</span>
+                                <span>60 мин</span>
+                                <span class="free">Бесплатно</span>
+                            </div>
                         </div>
                     </a>
 
                     <a href="#" class="recorded-item">
-                        <i class="fas fa-play-circle"></i>
-                        <div class="recorded-info">
+                        <div class="recorded-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="recorded-content">
                             <h3>Сенет: путь в загробный мир</h3>
-                            <p>Дмитрий Соколов • 40 мин • 250 ₽</p>
+                            <div class="recorded-meta">
+                                <span>Дмитрий Соколов</span>
+                                <span>40 мин</span>
+                                <span class="price">250 ₽</span>
+                            </div>
                         </div>
                     </a>
 
                     <a href="#" class="recorded-item">
-                        <i class="fas fa-play-circle"></i>
-                        <div class="recorded-info">
+                        <div class="recorded-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="recorded-content">
                             <h3>Нарды: игра королей</h3>
-                            <p>Петр Васильев • 30 мин • Бесплатно</p>
+                            <div class="recorded-meta">
+                                <span>Петр Васильев</span>
+                                <span>30 мин</span>
+                                <span class="free">Бесплатно</span>
+                            </div>
                         </div>
                     </a>
-                </div>
-
-                <div class="text-center">
-                    <a href="#" class="btn-outline">Все записи →</a>
                 </div>
             </div>
         </section>
@@ -447,15 +595,33 @@
         <!-- Форма заявки -->
         <section class="request-section">
             <div class="container">
-                <div class="request-box">
-                    <h2>Хотите провести свой мастер-класс?</h2>
-                    <p>Если вы этнограф, историк, коллекционер или мастер традиционных игр, мы будем рады сотрудничеству.</p>
-                    <form class="request-form-simple">
-                        <input type="text" placeholder="Ваше имя" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Тема мастер-класса">
-                        <button type="submit" class="btn-primary">Отправить заявку</button>
-                    </form>
+                <div class="request-wrapper">
+                    <div class="request-content">
+                        <h2>Хотите провести свой мастер-класс?</h2>
+                        <p>Если вы этнограф, историк, коллекционер или мастер традиционных игр, мы будем рады сотрудничеству. Расскажите о своей теме, и мы свяжемся с вами.</p>
+                        <ul class="request-benefits">
+                            <li><i class="fas fa-check-circle"></i> Площадка с аудиторией 5000+ человек</li>
+                            <li><i class="fas fa-check-circle"></i> Помощь в организации и продвижении</li>
+                            <li><i class="fas fa-check-circle"></i> Гонорар за проведение</li>
+                        </ul>
+                    </div>
+                    <div class="request-form-wrapper">
+                        <form class="request-form">
+                            <h3>Заявка на проведение</h3>
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Тема мастер-класса">
+                            <select>
+                                <option>Выберите формат</option>
+                                <option>Онлайн</option>
+                                <option>Очно (Москва)</option>
+                                <option>Очно (СПб)</option>
+                                <option>Очно (другой город)</option>
+                            </select>
+                            <textarea placeholder="Краткое описание" rows="3"></textarea>
+                            <button type="submit" class="btn-submit">Отправить заявку</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -469,7 +635,7 @@
                         <i class="fas fa-globe-asia"></i>
                         <span>WORLD GAME ACADEMY</span>
                     </a>
-                    <p>Академия традиционных игр народов мира</p>
+                    <p>Академия традиционных игр народов мира. Сохраняем игровое наследие человечества с 2015 года.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Разделы</h4>
@@ -486,6 +652,7 @@
                         <li><a href="#">О проекте</a></li>
                         <li><a href="#">Партнеры</a></li>
                         <li><a href="#">Контакты</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -494,13 +661,148 @@
                         <a href="#"><i class="fab fa-telegram"></i></a>
                         <a href="#"><i class="fab fa-vk"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 World Game Academy</p>
+                <p>© 2025 World Game Academy. Все права защищены.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Поиск по мастер-классам
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+            const workshops = document.querySelectorAll('.workshop-card');
+            const noResults = document.getElementById('noResults');
+            const categoryFilters = document.querySelectorAll('.filter-category');
+            
+            // Функция поиска
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                let hasResults = false;
+                
+                workshops.forEach(workshop => {
+                    const title = workshop.querySelector('.workshop-title')?.textContent.toLowerCase() || '';
+                    const leader = workshop.querySelector('.workshop-leader')?.textContent.toLowerCase() || '';
+                    const location = workshop.querySelector('.workshop-location')?.textContent.toLowerCase() || '';
+                    const tags = workshop.dataset.tags?.toLowerCase() || '';
+                    const description = workshop.querySelector('.card-description')?.textContent.toLowerCase() || '';
+                    
+                    const matchesSearch = searchTerm === '' || 
+                        title.includes(searchTerm) || 
+                        leader.includes(searchTerm) || 
+                        location.includes(searchTerm) || 
+                        tags.includes(searchTerm) ||
+                        description.includes(searchTerm);
+                    
+                    if (matchesSearch) {
+                        workshop.style.display = 'flex';
+                        hasResults = true;
+                    } else {
+                        workshop.style.display = 'none';
+                    }
+                });
+                
+                // Показываем/скрываем сообщение "Ничего не найдено"
+                if (noResults) {
+                    noResults.style.display = hasResults ? 'none' : 'block';
+                }
+            }
+            
+            // Поиск при вводе текста
+            if (searchInput) {
+                searchInput.addEventListener('input', performSearch);
+            }
+            
+            // Поиск при нажатии на кнопку
+            if (searchBtn) {
+                searchBtn.addEventListener('click', performSearch);
+            }
+            
+            // Поиск при нажатии Enter
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        performSearch();
+                    }
+                });
+            }
+            
+            // Фильтр по категориям
+            categoryFilters.forEach(filter => {
+                filter.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const category = this.dataset.category;
+                    
+                    // Сбрасываем активный класс у всех фильтров
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    
+                    // Добавляем активный класс текущему фильтру
+                    this.classList.add('active');
+                    
+                    // Фильтруем мастер-классы
+                    let hasResults = false;
+                    
+                    workshops.forEach(workshop => {
+                        if (category === 'all' || workshop.dataset.category === category) {
+                            workshop.style.display = 'flex';
+                            hasResults = true;
+                        } else {
+                            workshop.style.display = 'none';
+                        }
+                    });
+                    
+                    // Очищаем поисковой запрос при фильтрации
+                    if (searchInput) {
+                        searchInput.value = '';
+                    }
+                    
+                    // Показываем/скрываем сообщение "Ничего не найдено"
+                    if (noResults) {
+                        noResults.style.display = hasResults ? 'none' : 'block';
+                    }
+                });
+            });
+            
+            // Календарь (простая навигация для демонстрации)
+            const calendarPrev = document.querySelector('.calendar-prev');
+            const calendarNext = document.querySelector('.calendar-next');
+            const calendarTitle = document.querySelector('.calendar-header h3');
+            
+            if (calendarPrev && calendarNext && calendarTitle) {
+                let monthOffset = 0;
+                const months = [
+                    'Январь - Февраль 2025',
+                    'Февраль - Март 2025',
+                    'Март - Апрель 2025',
+                    'Апрель - Май 2025',
+                    'Май - Июнь 2025',
+                    'Июнь - Июль 2025',
+                    'Июль - Август 2025',
+                    'Август - Сентябрь 2025',
+                    'Сентябрь - Октябрь 2025',
+                    'Октябрь - Ноябрь 2025',
+                    'Ноябрь - Декабрь 2025',
+                    'Декабрь 2025 - Январь 2026'
+                ];
+                
+                calendarPrev.addEventListener('click', function() {
+                    monthOffset = (monthOffset - 1 + months.length) % months.length;
+                    calendarTitle.textContent = months[monthOffset];
+                });
+                
+                calendarNext.addEventListener('click', function() {
+                    monthOffset = (monthOffset + 1) % months.length;
+                    calendarTitle.textContent = months[monthOffset];
+                });
+            }
+        });
+    </script>
 </body>
 </html>
