@@ -2966,18 +2966,24 @@ footer::before {
         flex-direction: column;
         text-align: center;
     }
-    /* Выравнивание preview-секции */
+   
+/* Выравнивание preview-секции */
+.preview {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
 .preview-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .preview-card {
     background: var(--bg-card);
-    padding: 40px 30px;
+    padding: 50px 30px;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
@@ -2988,32 +2994,36 @@ footer::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 280px;
 }
 
 .preview-card i {
-    font-size: 48px;
+    font-size: 52px;
     color: var(--accent);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .preview-card h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
 }
 
 .preview-card p {
     color: var(--text-secondary);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .preview-link {
     color: var(--accent);
     font-weight: 600;
+    font-size: 15px;
     transition: var(--transition);
 }
 
 .preview-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--accent);
     box-shadow: var(--shadow-hover);
 }
@@ -3022,11 +3032,59 @@ footer::before {
     transform: translateX(5px);
 }
 
+/* Цитата */
+.quote {
+    padding: 80px 0;
+    background: var(--bg-primary);
+    text-align: center;
+}
+
+.quote-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-content i {
+    font-size: 60px;
+    color: var(--accent);
+    opacity: 0.3;
+    margin-bottom: 25px;
+}
+
+.quote-content p {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+    color: var(--text-primary);
+}
+
+.quote-author {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 18px;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .preview-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
     }
+    
+    .preview-card {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+    
+    .quote-content p {
+        font-size: 22px;
+    }
 }
+
+@media (max-width: 480px) {
+    .quote-content p {
+        font-size: 18px;
+    }
 }
