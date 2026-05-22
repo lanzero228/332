@@ -490,6 +490,18 @@ nav a.active {
     margin-right: 5px;
 }
 
+.game-description-full {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+}
+
+.game-description-full p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
 .game-details {
     color: var(--accent);
     text-decoration: none;
@@ -718,22 +730,22 @@ nav a.active {
 }
 
 .quote-content {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .quote-content i {
     font-size: 60px;
     color: var(--accent);
-    opacity: 0.2;
-    margin-bottom: 20px;
+    opacity: 0.3;
+    margin-bottom: 25px;
 }
 
 .quote-content p {
     font-size: 28px;
     font-style: italic;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-family: Georgia, serif;
     color: var(--text-primary);
 }
@@ -928,53 +940,66 @@ footer::before {
 /* ===== ПРЕВЬЮ РАЗДЕЛОВ ===== */
 .preview {
     padding: 80px 0;
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
 }
 
 .preview-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .preview-card {
     background: var(--bg-card);
-    padding: 40px 20px;
+    padding: 50px 30px;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
     color: var(--text-primary);
     border: 1px solid var(--border);
     transition: var(--transition);
-}
-
-.preview-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-hover);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
 }
 
 .preview-card i {
-    font-size: 50px;
+    font-size: 52px;
     color: var(--accent);
     margin-bottom: 20px;
 }
 
 .preview-card h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
 }
 
 .preview-card p {
-    color: var(--text-muted);
+    color: var(--text-secondary);
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .preview-link {
     color: var(--accent);
     font-weight: 600;
-    display: inline-block;
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.preview-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-hover);
+}
+
+.preview-card:hover .preview-link {
+    transform: translateX(5px);
 }
 
 /* ===== КОНТИНЕНТЫ ДЕТАЛЬНО ===== */
@@ -1290,179 +1315,7 @@ footer::before {
     font-size: 13px;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
-@media (max-width: 1200px) {
-    .features-grid,
-    .continents-grid,
-    .library-grid,
-    .preview-grid,
-    .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .games-grid,
-    .workshops-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .calendar-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .hero-content {
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .hero-buttons {
-        justify-content: center;
-    }
-    
-    .stats-grid {
-        justify-content: center;
-    }
-    
-    .header-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    nav ul {
-        gap: 20px;
-    }
-    
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .continent-block {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .continent-block.reverse {
-        direction: ltr;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 36px;
-    }
-    
-    .section-title {
-        font-size: 32px;
-    }
-    
-    .page-title {
-        font-size: 36px;
-    }
-    
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .stats-grid {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
-    .features-grid,
-    .continents-grid,
-    .library-grid,
-    .preview-grid,
-    .categories-grid,
-    .games-grid,
-    .workshops-grid,
-    .calendar-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .schedule-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    
-    .filter-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .filter-btn {
-        width: 200px;
-    }
-    
-    .workshop-footer {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .request-box {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 28px;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .hero-buttons .btn-primary,
-    .hero-buttons .btn-outline {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .page-title {
-        font-size: 28px;
-    }
-    
-    .game-header {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-    
-    .game-meta {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .card-footer {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .calendar-events li {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .event-info {
-        text-align: center;
-    }
-}
-/* ===== МАСТЕР-КЛАССЫ ===== */
-
-/* Hero секция */
+/* ===== МАСТЕР-КЛАССЫ (СПЕЦИАЛЬНЫЕ) ===== */
 .workshops-hero {
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     padding: 80px 0;
@@ -1569,6 +1422,7 @@ footer::before {
     border-radius: 50px;
     overflow: hidden;
     transition: var(--transition);
+    position: relative;
 }
 
 .hero-search:focus-within {
@@ -1730,7 +1584,8 @@ footer::before {
     gap: 30px;
 }
 
-.workshop-card {
+/* Переопределение workshop-card для мастер-классов */
+.upcoming-grid .workshop-card {
     background: var(--bg-card);
     border-radius: 20px;
     padding: 0;
@@ -1741,13 +1596,13 @@ footer::before {
     display: flex;
 }
 
-.workshop-card:hover {
+.upcoming-grid .workshop-card:hover {
     border-color: var(--accent);
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
 }
 
-.workshop-card.featured {
+.upcoming-grid .workshop-card.featured {
     border: 2px solid var(--accent);
     background: linear-gradient(135deg, var(--bg-card), #2c3f2c);
 }
@@ -1905,12 +1760,7 @@ footer::before {
     color: var(--accent);
 }
 
-/* Календарь */
-.calendar-section {
-    padding: 80px 0;
-    background: var(--bg-secondary);
-}
-
+/* Календарь мастер-классов */
 .calendar-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -1950,65 +1800,6 @@ footer::before {
 .calendar-next:hover {
     border-color: var(--accent);
     color: var(--accent);
-}
-
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 30px;
-}
-
-.calendar-month h4 {
-    font-size: 18px;
-    color: var(--accent);
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border);
-}
-
-.month-events {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.month-event {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 8px 10px;
-    background: var(--bg-primary);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    transition: var(--transition);
-}
-
-.month-event:hover {
-    border-color: var(--accent);
-    transform: translateX(5px);
-}
-
-.month-event .event-day {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--accent);
-    min-width: 35px;
-}
-
-.event-details {
-    flex: 1;
-}
-
-.event-details strong {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 2px;
-}
-
-.event-details span {
-    color: var(--text-muted);
-    font-size: 12px;
 }
 
 /* Наши мастера */
@@ -2167,246 +1958,7 @@ footer::before {
     font-weight: 600;
 }
 
-/* Форма заявки */
-.request-section {
-    padding: 80px 0;
-    background: var(--bg-primary);
-}
-
-.request-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    background: var(--bg-card);
-    border-radius: 30px;
-    border: 1px solid var(--border);
-    overflow: hidden;
-}
-
-.request-content {
-    padding: 50px 40px;
-}
-
-.request-content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.request-content p {
-    color: var(--text-secondary);
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.request-benefits {
-    list-style: none;
-}
-
-.request-benefits li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    color: var(--text-secondary);
-}
-
-.request-benefits i {
-    color: var(--accent);
-    font-size: 20px;
-}
-
-.request-form-wrapper {
-    background: var(--bg-secondary);
-    padding: 50px 40px;
-}
-
-.request-form h3 {
-    font-size: 24px;
-    margin-bottom: 25px;
-    color: var(--accent);
-}
-
-.request-form input,
-.request-form select,
-.request-form textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 15px;
-    background: var(--bg-primary);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    color: var(--text-primary);
-    font-size: 15px;
-    transition: var(--transition);
-}
-
-.request-form input:focus,
-.request-form select:focus,
-.request-form textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: var(--glow);
-}
-
-.request-form select {
-    cursor: pointer;
-}
-
-.btn-submit {
-    width: 100%;
-    padding: 15px;
-    background: var(--accent);
-    color: var(--bg-primary);
-    border: none;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-    transition: var(--transition);
-    border: 2px solid var(--accent);
-}
-
-.btn-submit:hover {
-    background: transparent;
-    color: var(--accent);
-}
-
-/* Адаптивность для мастер-классов */
-@media (max-width: 1200px) {
-    .upcoming-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .masters-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .workshops-hero .hero-title {
-        font-size: 42px;
-    }
-    
-    .workshops-hero .hero-stats {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .categories-section .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .calendar-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .request-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .workshop-card {
-        flex-direction: column;
-    }
-    
-    .card-date {
-        flex-direction: row;
-        justify-content: space-around;
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding: 15px;
-    }
-    
-    .date-box {
-        margin-bottom: 0;
-        margin-right: 10px;
-    }
-    
-    .masters-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .categories-section .categories-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .section-header {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .workshops-hero .hero-title {
-        font-size: 32px;
-    }
-    
-    .hero-search {
-        flex-direction: column;
-        border-radius: 20px;
-    }
-    
-    .search-btn {
-        padding: 12px;
-    }
-    
-    .card-footer {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .recorded-item {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .recorded-meta {
-        justify-content: center;
-    }
-    
-    .request-content,
-    .request-form-wrapper {
-        padding: 30px 20px;
-    }
-}
-/* Стили для поиска и фильтрации */
-.no-results {
-    text-align: center;
-    padding: 60px 20px;
-    background: var(--bg-card);
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    margin-top: 30px;
-}
-
-.no-results i {
-    font-size: 60px;
-    color: var(--accent);
-    opacity: 0.3;
-    margin-bottom: 20px;
-}
-
-.no-results h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.no-results p {
-    color: var(--text-muted);
-}
-
-.filter-category.active {
-    border-color: var(--accent);
-    box-shadow: var(--glow);
-}
-
-.filter-category.active .category-icon {
-    background: rgba(200, 155, 94, 0.2);
-}
 /* ===== КОНТАКТЫ И ПАРТНЕРЫ ===== */
-
-/* Hero секция */
 .contacts-hero {
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     padding: 80px 0;
@@ -2434,7 +1986,6 @@ footer::before {
     z-index: 2;
 }
 
-/* Контактная информация */
 .contact-info-section {
     padding: 80px 0;
     background: var(--bg-secondary);
@@ -2904,8 +2455,68 @@ footer::before {
     width: 20px;
 }
 
-/* Адаптивность */
+/* Стили для поиска и фильтрации */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    margin-top: 30px;
+}
+
+.no-results i {
+    font-size: 60px;
+    color: var(--accent);
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+.no-results h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: var(--text-muted);
+}
+
+.filter-category.active {
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.filter-category.active .category-icon {
+    background: rgba(200, 155, 94, 0.2);
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 1200px) {
+    .features-grid,
+    .continents-grid,
+    .library-grid,
+    .preview-grid,
+    .categories-section .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .games-grid,
+    .workshops-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .upcoming-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .masters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
     .contact-grid,
     .partners-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -2917,6 +2528,67 @@ footer::before {
 }
 
 @media (max-width: 992px) {
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .stats-grid {
+        justify-content: center;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        gap: 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .continent-block {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .continent-block.reverse {
+        direction: ltr;
+    }
+    
+    .workshops-hero .hero-title {
+        font-size: 42px;
+    }
+    
+    .workshops-hero .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .categories-section .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .request-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
     .feedback-wrapper {
         grid-template-columns: 1fr;
     }
@@ -2927,6 +2599,97 @@ footer::before {
 }
 
 @media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .page-title {
+        font-size: 36px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .stats-grid {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .features-grid,
+    .continents-grid,
+    .library-grid,
+    .preview-grid,
+    .categories-section .categories-grid,
+    .games-grid,
+    .workshops-grid,
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .schedule-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+    }
+    
+    .workshop-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .request-box {
+        padding: 30px 20px;
+    }
+    
+    .upcoming-grid .workshop-card {
+        flex-direction: column;
+    }
+    
+    .card-date {
+        flex-direction: row;
+        justify-content: space-around;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 15px;
+    }
+    
+    .date-box {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+    .masters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .categories-section .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
     .contact-grid,
     .partners-grid,
     .partner-benefits-grid {
@@ -2946,9 +2709,94 @@ footer::before {
         flex-direction: column;
         text-align: center;
     }
+    
+    .preview-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .preview-card {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+    
+    .quote-content p {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .game-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .game-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .calendar-events li {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .event-info {
+        text-align: center;
+    }
+    
+    .workshops-hero .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-search {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    
+    .search-btn {
+        padding: 12px;
+    }
+    
+    .recorded-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .recorded-meta {
+        justify-content: center;
+    }
+    
+    .request-content,
+    .request-form-wrapper {
+        padding: 30px 20px;
+    }
+    
     .social-buttons {
         flex-direction: column;
     }
@@ -2966,124 +2814,7 @@ footer::before {
         flex-direction: column;
         text-align: center;
     }
-   
-/* Выравнивание preview-секции */
-.preview {
-    padding: 80px 0;
-    background: var(--bg-secondary);
-}
-
-.preview-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.preview-card {
-    background: var(--bg-card);
-    padding: 50px 30px;
-    border-radius: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--text-primary);
-    border: 1px solid var(--border);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 280px;
-}
-
-.preview-card i {
-    font-size: 52px;
-    color: var(--accent);
-    margin-bottom: 20px;
-}
-
-.preview-card h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
-    font-weight: 700;
-}
-
-.preview-card p {
-    color: var(--text-secondary);
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-
-.preview-link {
-    color: var(--accent);
-    font-weight: 600;
-    font-size: 15px;
-    transition: var(--transition);
-}
-
-.preview-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--accent);
-    box-shadow: var(--shadow-hover);
-}
-
-.preview-card:hover .preview-link {
-    transform: translateX(5px);
-}
-
-/* Цитата */
-.quote {
-    padding: 80px 0;
-    background: var(--bg-primary);
-    text-align: center;
-}
-
-.quote-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.quote-content i {
-    font-size: 60px;
-    color: var(--accent);
-    opacity: 0.3;
-    margin-bottom: 25px;
-}
-
-.quote-content p {
-    font-size: 28px;
-    font-style: italic;
-    line-height: 1.5;
-    margin-bottom: 25px;
-    font-family: Georgia, serif;
-    color: var(--text-primary);
-}
-
-.quote-author {
-    color: var(--accent);
-    font-weight: 600;
-    font-size: 18px;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .preview-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-    }
     
-    .preview-card {
-        min-height: auto;
-        padding: 40px 20px;
-    }
-    
-    .quote-content p {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 480px) {
     .quote-content p {
         font-size: 18px;
     }
