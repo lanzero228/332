@@ -2966,4 +2966,67 @@ footer::before {
         flex-direction: column;
         text-align: center;
     }
+    /* Выравнивание preview-секции */
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.preview-card {
+    background: var(--bg-card);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-card i {
+    font-size: 48px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.preview-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.preview-card p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.preview-link {
+    color: var(--accent);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-hover);
+}
+
+.preview-card:hover .preview-link {
+    transform: translateX(5px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .preview-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
 }
